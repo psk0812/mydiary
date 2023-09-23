@@ -18,12 +18,12 @@ namespace mydiary
 
         private IconButton currentbtn;
         private Form currentForm;
-        
+        private float aspectRatio = 784f / 558f;//비율 유지하기 위해 
 
         public Form1()
         {
             InitializeComponent();
-            this.MinimumSize = new Size(1118, 789); // 너비 400픽셀, 높이 300픽셀로 설정
+            this.MinimumSize = new Size(784, 558); 
             PrivateFontCollection privateFonts = new PrivateFontCollection();
             
 
@@ -45,12 +45,12 @@ namespace mydiary
         {
             try
             {
-                if (currentForm != null)
+                if (currentForm != null & currentForm != childForm)
                 {
                     currentForm.Close();
                 }
 
-
+               
                 currentForm = childForm;
 
                 childForm.TopLevel = false;
@@ -61,14 +61,15 @@ namespace mydiary
                 childForm.BringToFront();
                 childForm.Show();
             }
-            catch 
+            catch
             { }
+        }
            
 
 
           
 
-        }
+    
 
         #region menubtn
         private struct RGBColors
@@ -131,8 +132,10 @@ namespace mydiary
         {
             if (this.WindowState != FormWindowState.Maximized)
                 this.WindowState = FormWindowState.Maximized;
+                
 
             else this.WindowState = FormWindowState.Normal;
+            OpenChildForm(currentForm); 
         }
 
         private void iconexit_MouseClick(object sender, MouseEventArgs e)
@@ -154,5 +157,22 @@ namespace mydiary
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
         #endregion
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Form1_ResizeEnd(object sender, EventArgs e)
+        {
+            int newWidth = this.Width;
+            int newHeight = (int)(newWidth / aspectRatio);
+
+            // 폼의 크기를 비율에 따라 조절
+            this.Size = new Size(newWidth, newHeight);
+
+            OpenChildForm(currentForm);
+
+        }
     }
 }

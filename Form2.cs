@@ -20,9 +20,9 @@ namespace mydiary
         public formTarget()
         {
             InitializeComponent();
-            
 
-            
+       
+
 
             #region font
             PrivateFontCollection privateFonts = new PrivateFontCollection();
@@ -32,35 +32,79 @@ namespace mydiary
             
             privateFonts.AddFontFile("NanumSquareR.ttf");
             privateFonts.AddFontFile("NanumSquareB.ttf");
-
+            
             //24f는 출력될 폰트사이즈
 
             Font menufont = new Font(privateFonts.Families[0], 22f);
             Font menufont2 = new Font(privateFonts.Families[1], 16f);
             Font menufont3 = new Font(privateFonts.Families[0], 12f);
-            lblsay.Font = menufont;
-            lblwhatshoud.Font = menufont2;
-            lblwhatshoud.ForeColor = Color.FromArgb(245, 77, 43);
-            lblTodo.Font = menufont2;
-            lblTodo.ForeColor = Color.FromArgb(245, 77, 43);
-            custombox1.Font = menufont3;
-            custombox1.ForeColor = Color.FromArgb(245, 77, 43);
+            label_tobe.Font = menufont;
+
+
             #endregion
 
+        }
+
+     
+
+        private void formTarget_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void formTarget_ResizeEnd(object sender, EventArgs e)
+        {
+
+            // 현재 폼의 너비와 높이를 가져옵니다.
+            int formWidth = this.ClientSize.Width;
+            int formHeight = this.ClientSize.Height;
+
+            // 원하는 비율을 설정합니다.
+            float desiredWidth = 1100;
+            float desiredHeight = 610;
+
+            // 너비와 높이의 비율을 계산합니다.
+            float widthRatio = formWidth / desiredWidth;
+            float heightRatio = formHeight / desiredHeight;
+
+            // 비율 중에서 작은 값(가로 또는 세로 중에서 크기가 더 작은 쪽)을 사용하여 폰트 크기를 계산합니다.
+            float fontSize = Math.Min(widthRatio, heightRatio) * 22.0f;
+
+            // 폰트 크기가 너무 작거나 큰 경우 최소값과 최대값을 설정할 수 있습니다.
+            float minFontSize = 10.0f;
+            float maxFontSize = 40.0f;
+            fontSize = Math.Max(minFontSize, Math.Min(maxFontSize, fontSize));
+            PrivateFontCollection privateFonts = new PrivateFontCollection();
+            privateFonts.AddFontFile("NanumSquareR.ttf");
+            Font menufont = new Font(privateFonts.Families[0], fontSize);
+        }
+
+        private void radiuspanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void picuterboxCircle1_LoadCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+          
         }
 
         private void picuterboxCircle1_Click(object sender, EventArgs e)
         {
 
         }
- 
 
-        private void label1_Click(object sender, EventArgs e)
+        private void radiuspanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void lblsay_Click(object sender, EventArgs e)
+        private void lbl_tobe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

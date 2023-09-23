@@ -64,7 +64,7 @@ namespace mydiary
             this.MenuPannel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MenuPannel.Location = new System.Drawing.Point(0, 0);
             this.MenuPannel.Name = "MenuPannel";
-            this.MenuPannel.Size = new System.Drawing.Size(200, 773);
+            this.MenuPannel.Size = new System.Drawing.Size(200, 594);
             this.MenuPannel.TabIndex = 0;
             // 
             // btnMonth
@@ -199,7 +199,7 @@ namespace mydiary
             this.titlebar.Dock = System.Windows.Forms.DockStyle.Top;
             this.titlebar.Location = new System.Drawing.Point(200, 0);
             this.titlebar.Name = "titlebar";
-            this.titlebar.Size = new System.Drawing.Size(902, 36);
+            this.titlebar.Size = new System.Drawing.Size(784, 36);
             this.titlebar.TabIndex = 1;
             this.titlebar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.titlebar_MouseDown);
             // 
@@ -212,7 +212,7 @@ namespace mydiary
             this.iconexit.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.iconexit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconexit.IconSize = 20;
-            this.iconexit.Location = new System.Drawing.Point(844, 12);
+            this.iconexit.Location = new System.Drawing.Point(726, 12);
             this.iconexit.Name = "iconexit";
             this.iconexit.Size = new System.Drawing.Size(21, 20);
             this.iconexit.TabIndex = 2;
@@ -228,7 +228,7 @@ namespace mydiary
             this.iconmaximize.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.iconmaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconmaximize.IconSize = 20;
-            this.iconmaximize.Location = new System.Drawing.Point(817, 12);
+            this.iconmaximize.Location = new System.Drawing.Point(699, 12);
             this.iconmaximize.Name = "iconmaximize";
             this.iconmaximize.Size = new System.Drawing.Size(21, 20);
             this.iconmaximize.TabIndex = 1;
@@ -244,7 +244,7 @@ namespace mydiary
             this.iconmini.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.iconmini.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconmini.IconSize = 20;
-            this.iconmini.Location = new System.Drawing.Point(790, 12);
+            this.iconmini.Location = new System.Drawing.Point(672, 12);
             this.iconmini.Name = "iconmini";
             this.iconmini.Size = new System.Drawing.Size(21, 20);
             this.iconmini.TabIndex = 0;
@@ -256,19 +256,21 @@ namespace mydiary
             this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainpanel.Location = new System.Drawing.Point(200, 36);
             this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(902, 737);
+            this.mainpanel.Size = new System.Drawing.Size(784, 558);
             this.mainpanel.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1102, 773);
+            this.ClientSize = new System.Drawing.Size(984, 594);
             this.ControlBox = false;
             this.Controls.Add(this.mainpanel);
             this.Controls.Add(this.titlebar);
             this.Controls.Add(this.MenuPannel);
             this.Name = "Form1";
+            this.ResizeEnd += new System.EventHandler(this.Form1_ResizeEnd);
+            this.Resize += new System.EventHandler(this.Form1_Resize);
             this.MenuPannel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Menuicon)).EndInit();

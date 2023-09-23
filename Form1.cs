@@ -18,12 +18,12 @@ namespace mydiary
 
         private IconButton currentbtn;
         private Form currentForm;
-        private float aspectRatio = 784f / 558f;//비율 유지하기 위해 
+        private float aspectRatio = 955f / 558f;//비율 유지하기 위해 
 
         public Form1()
         {
             InitializeComponent();
-            this.MinimumSize = new Size(784, 558); 
+            this.MinimumSize = new Size(955, 558); 
             PrivateFontCollection privateFonts = new PrivateFontCollection();
             
 

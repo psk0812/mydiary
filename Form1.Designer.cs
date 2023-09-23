@@ -43,6 +43,10 @@ namespace mydiary
             this.iconmaximize = new FontAwesome.Sharp.IconPictureBox();
             this.iconmini = new FontAwesome.Sharp.IconPictureBox();
             this.mainpanel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.MenuPannel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Menuicon)).BeginInit();
@@ -50,6 +54,7 @@ namespace mydiary
             ((System.ComponentModel.ISupportInitialize)(this.iconexit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconmini)).BeginInit();
+            this.mainpanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuPannel
@@ -64,7 +69,7 @@ namespace mydiary
             this.MenuPannel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MenuPannel.Location = new System.Drawing.Point(0, 0);
             this.MenuPannel.Name = "MenuPannel";
-            this.MenuPannel.Size = new System.Drawing.Size(200, 594);
+            this.MenuPannel.Size = new System.Drawing.Size(200, 542);
             this.MenuPannel.TabIndex = 0;
             // 
             // btnMonth
@@ -199,7 +204,7 @@ namespace mydiary
             this.titlebar.Dock = System.Windows.Forms.DockStyle.Top;
             this.titlebar.Location = new System.Drawing.Point(200, 0);
             this.titlebar.Name = "titlebar";
-            this.titlebar.Size = new System.Drawing.Size(784, 36);
+            this.titlebar.Size = new System.Drawing.Size(779, 36);
             this.titlebar.TabIndex = 1;
             this.titlebar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.titlebar_MouseDown);
             // 
@@ -212,7 +217,7 @@ namespace mydiary
             this.iconexit.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.iconexit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconexit.IconSize = 20;
-            this.iconexit.Location = new System.Drawing.Point(726, 12);
+            this.iconexit.Location = new System.Drawing.Point(721, 12);
             this.iconexit.Name = "iconexit";
             this.iconexit.Size = new System.Drawing.Size(21, 20);
             this.iconexit.TabIndex = 2;
@@ -228,7 +233,7 @@ namespace mydiary
             this.iconmaximize.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.iconmaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconmaximize.IconSize = 20;
-            this.iconmaximize.Location = new System.Drawing.Point(699, 12);
+            this.iconmaximize.Location = new System.Drawing.Point(694, 12);
             this.iconmaximize.Name = "iconmaximize";
             this.iconmaximize.Size = new System.Drawing.Size(21, 20);
             this.iconmaximize.TabIndex = 1;
@@ -244,7 +249,7 @@ namespace mydiary
             this.iconmini.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.iconmini.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconmini.IconSize = 20;
-            this.iconmini.Location = new System.Drawing.Point(672, 12);
+            this.iconmini.Location = new System.Drawing.Point(667, 12);
             this.iconmini.Name = "iconmini";
             this.iconmini.Size = new System.Drawing.Size(21, 20);
             this.iconmini.TabIndex = 0;
@@ -253,17 +258,53 @@ namespace mydiary
             // 
             // mainpanel
             // 
+            this.mainpanel.Controls.Add(this.panel5);
+            this.mainpanel.Controls.Add(this.panel4);
+            this.mainpanel.Controls.Add(this.panel3);
+            this.mainpanel.Controls.Add(this.panel2);
             this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainpanel.Location = new System.Drawing.Point(200, 36);
             this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(784, 558);
+            this.mainpanel.Size = new System.Drawing.Size(779, 506);
             this.mainpanel.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(779, 10);
+            this.panel2.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 10);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(10, 496);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(769, 10);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(10, 496);
+            this.panel4.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(10, 496);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(759, 10);
+            this.panel5.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 594);
+            this.ClientSize = new System.Drawing.Size(979, 542);
             this.ControlBox = false;
             this.Controls.Add(this.mainpanel);
             this.Controls.Add(this.titlebar);
@@ -278,6 +319,7 @@ namespace mydiary
             ((System.ComponentModel.ISupportInitialize)(this.iconexit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconmini)).EndInit();
+            this.mainpanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -298,6 +340,10 @@ namespace mydiary
         private FontAwesome.Sharp.IconPictureBox iconmaximize;
         private FontAwesome.Sharp.IconPictureBox iconmini;
         private System.Windows.Forms.Panel mainpanel;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
     }
 }
 

@@ -23,7 +23,7 @@ namespace mydiary
         public Form1()
         {
             InitializeComponent();
-           
+            this.MinimumSize = new Size(1118, 789); // 너비 400픽셀, 높이 300픽셀로 설정
             PrivateFontCollection privateFonts = new PrivateFontCollection();
             
 

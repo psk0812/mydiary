@@ -35,25 +35,27 @@ namespace mydiary
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.radiuspanel2 = new mydiary.radiuspanel();
+            this.custombox1 = new mydiary.custombox();
+            this.lblwhatshoud = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel_form_Tobe = new System.Windows.Forms.Panel();
+            this.radiuspanel1 = new mydiary.radiuspanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.picuterboxCircle1 = new mydiary.picuterboxCircle();
+            this.lblsay = new System.Windows.Forms.Label();
             this.radiuspanel3 = new mydiary.radiuspanel();
             this.lblTodo = new System.Windows.Forms.Label();
-            this.radiuspanel2 = new mydiary.radiuspanel();
-            this.custombox1 = new mydiary.custombox();
-            this.lblwhatshoud = new System.Windows.Forms.Label();
-            this.radiuspanel1 = new mydiary.radiuspanel();
-            this.lblsay = new System.Windows.Forms.Label();
-            this.picuterboxCircle1 = new mydiary.picuterboxCircle();
             this.panel9.SuspendLayout();
-            this.panel_form_Tobe.SuspendLayout();
-            this.radiuspanel3.SuspendLayout();
             this.radiuspanel2.SuspendLayout();
+            this.panel_form_Tobe.SuspendLayout();
             this.radiuspanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picuterboxCircle1)).BeginInit();
+            this.radiuspanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -101,6 +103,46 @@ namespace mydiary
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(561, 421);
             this.panel9.TabIndex = 5;
+            // 
+            // radiuspanel2
+            // 
+            this.radiuspanel2.BackColor = System.Drawing.Color.White;
+            this.radiuspanel2.Controls.Add(this.custombox1);
+            this.radiuspanel2.Controls.Add(this.lblwhatshoud);
+            this.radiuspanel2.CornerRadius = 100;
+            this.radiuspanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radiuspanel2.Location = new System.Drawing.Point(0, 0);
+            this.radiuspanel2.Name = "radiuspanel2";
+            this.radiuspanel2.Size = new System.Drawing.Size(561, 421);
+            this.radiuspanel2.TabIndex = 0;
+            // 
+            // custombox1
+            // 
+            this.custombox1.BackColor = System.Drawing.SystemColors.Window;
+            this.custombox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.custombox1.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.custombox1.BorderSize = 2;
+            this.custombox1.IsFocused = false;
+            this.custombox1.Location = new System.Drawing.Point(32, 90);
+            this.custombox1.Multiline = true;
+            this.custombox1.Name = "custombox1";
+            this.custombox1.Padding = new System.Windows.Forms.Padding(7);
+            this.custombox1.PasswordChar = false;
+            this.custombox1.Size = new System.Drawing.Size(501, 325);
+            this.custombox1.TabIndex = 1;
+            this.custombox1.Texts = "1. 웃기 \\n 2.긍정적인 생각하기";
+            this.custombox1.UnderlinedStyle = false;
+            // 
+            // lblwhatshoud
+            // 
+            this.lblwhatshoud.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblwhatshoud.Location = new System.Drawing.Point(30, 20);
+            this.lblwhatshoud.Name = "lblwhatshoud";
+            this.lblwhatshoud.Size = new System.Drawing.Size(503, 35);
+            this.lblwhatshoud.TabIndex = 0;
+            this.lblwhatshoud.Text = "What Should I Do";
+            this.lblwhatshoud.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // panel10
             // 
@@ -151,6 +193,56 @@ namespace mydiary
             this.panel_form_Tobe.Size = new System.Drawing.Size(886, 280);
             this.panel_form_Tobe.TabIndex = 0;
             // 
+            // radiuspanel1
+            // 
+            this.radiuspanel1.BackColor = System.Drawing.Color.White;
+            this.radiuspanel1.Controls.Add(this.panel1);
+            this.radiuspanel1.CornerRadius = 100;
+            this.radiuspanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radiuspanel1.Location = new System.Drawing.Point(10, 10);
+            this.radiuspanel1.Name = "radiuspanel1";
+            this.radiuspanel1.Size = new System.Drawing.Size(866, 270);
+            this.radiuspanel1.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.picuterboxCircle1);
+            this.panel1.Controls.Add(this.lblsay);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(866, 270);
+            this.panel1.TabIndex = 0;
+            // 
+            // picuterboxCircle1
+            // 
+            this.picuterboxCircle1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Round;
+            this.picuterboxCircle1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.picuterboxCircle1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.picuterboxCircle1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            this.picuterboxCircle1.BorderSize = 10;
+            this.picuterboxCircle1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.picuterboxCircle1.GradientAngle = 50F;
+            this.picuterboxCircle1.Image = ((System.Drawing.Image)(resources.GetObject("picuterboxCircle1.Image")));
+            this.picuterboxCircle1.Location = new System.Drawing.Point(571, 0);
+            this.picuterboxCircle1.Name = "picuterboxCircle1";
+            this.picuterboxCircle1.Size = new System.Drawing.Size(250, 250);
+            this.picuterboxCircle1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picuterboxCircle1.TabIndex = 3;
+            this.picuterboxCircle1.TabStop = false;
+            this.picuterboxCircle1.Click += new System.EventHandler(this.picuterboxCircle1_Click);
+            // 
+            // lblsay
+            // 
+            this.lblsay.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblsay.Location = new System.Drawing.Point(0, 0);
+            this.lblsay.Name = "lblsay";
+            this.lblsay.Size = new System.Drawing.Size(571, 270);
+            this.lblsay.TabIndex = 4;
+            this.lblsay.Text = "\"해외 대도시의 대기업 개발자가 되겠다\"";
+            this.lblsay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblsay.Click += new System.EventHandler(this.lblsay_Click);
+            // 
             // radiuspanel3
             // 
             this.radiuspanel3.BackColor = System.Drawing.Color.White;
@@ -173,86 +265,6 @@ namespace mydiary
             this.lblTodo.Text = "Todo Check ";
             this.lblTodo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // radiuspanel2
-            // 
-            this.radiuspanel2.BackColor = System.Drawing.Color.White;
-            this.radiuspanel2.Controls.Add(this.custombox1);
-            this.radiuspanel2.Controls.Add(this.lblwhatshoud);
-            this.radiuspanel2.CornerRadius = 100;
-            this.radiuspanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radiuspanel2.Location = new System.Drawing.Point(0, 0);
-            this.radiuspanel2.Name = "radiuspanel2";
-            this.radiuspanel2.Size = new System.Drawing.Size(561, 421);
-            this.radiuspanel2.TabIndex = 0;
-            // 
-            // custombox1
-            // 
-            this.custombox1.BackColor = System.Drawing.SystemColors.Window;
-            this.custombox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.custombox1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.custombox1.BorderSize = 4;
-            
-            this.custombox1.IsFocused = false;
-            this.custombox1.Location = new System.Drawing.Point(32, 90);
-            this.custombox1.Multiline = true;
-            this.custombox1.Name = "custombox1";
-            this.custombox1.Padding = new System.Windows.Forms.Padding(7);
-            this.custombox1.PasswordChar = false;
-            this.custombox1.Size = new System.Drawing.Size(501, 325);
-            this.custombox1.TabIndex = 1;
-            this.custombox1.Texts = "";
-            this.custombox1.UnderlinedStyle = false;
-            // 
-            // lblwhatshoud
-            // 
-            this.lblwhatshoud.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblwhatshoud.Location = new System.Drawing.Point(30, 20);
-            this.lblwhatshoud.Name = "lblwhatshoud";
-            this.lblwhatshoud.Size = new System.Drawing.Size(503, 35);
-            this.lblwhatshoud.TabIndex = 0;
-            this.lblwhatshoud.Text = "What Should I Do";
-            this.lblwhatshoud.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // radiuspanel1
-            // 
-            this.radiuspanel1.BackColor = System.Drawing.Color.White;
-            this.radiuspanel1.Controls.Add(this.lblsay);
-            this.radiuspanel1.Controls.Add(this.picuterboxCircle1);
-            this.radiuspanel1.CornerRadius = 100;
-            this.radiuspanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radiuspanel1.Location = new System.Drawing.Point(10, 10);
-            this.radiuspanel1.Name = "radiuspanel1";
-            this.radiuspanel1.Size = new System.Drawing.Size(866, 270);
-            this.radiuspanel1.TabIndex = 7;
-            // 
-            // lblsay
-            // 
-            this.lblsay.Location = new System.Drawing.Point(30, 49);
-            this.lblsay.Name = "lblsay";
-            this.lblsay.Size = new System.Drawing.Size(571, 165);
-            this.lblsay.TabIndex = 4;
-            this.lblsay.Text = "\"해외 대도시의 대기업 개발자가 되겠다\"";
-            this.lblsay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // picuterboxCircle1
-            // 
-            this.picuterboxCircle1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picuterboxCircle1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Round;
-            this.picuterboxCircle1.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.picuterboxCircle1.BorderColor2 = System.Drawing.Color.HotPink;
-            this.picuterboxCircle1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.picuterboxCircle1.BorderSize = 10;
-            this.picuterboxCircle1.GradientAngle = 50F;
-            this.picuterboxCircle1.Image = ((System.Drawing.Image)(resources.GetObject("picuterboxCircle1.Image")));
-            this.picuterboxCircle1.Location = new System.Drawing.Point(620, 16);
-            this.picuterboxCircle1.Name = "picuterboxCircle1";
-            this.picuterboxCircle1.Size = new System.Drawing.Size(221, 221);
-            this.picuterboxCircle1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picuterboxCircle1.TabIndex = 3;
-            this.picuterboxCircle1.TabStop = false;
-            this.picuterboxCircle1.Click += new System.EventHandler(this.picuterboxCircle1_Click);
-            // 
             // formTarget
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -270,11 +282,12 @@ namespace mydiary
             this.Controls.Add(this.panel_form_Tobe);
             this.Name = "formTarget";
             this.panel9.ResumeLayout(false);
-            this.panel_form_Tobe.ResumeLayout(false);
-            this.radiuspanel3.ResumeLayout(false);
             this.radiuspanel2.ResumeLayout(false);
+            this.panel_form_Tobe.ResumeLayout(false);
             this.radiuspanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picuterboxCircle1)).EndInit();
+            this.radiuspanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -298,5 +311,6 @@ namespace mydiary
         private radiuspanel radiuspanel3;
         private System.Windows.Forms.Label lblTodo;
         private custombox custombox1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

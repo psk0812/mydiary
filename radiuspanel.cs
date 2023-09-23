@@ -15,6 +15,9 @@ namespace mydiary
     {
 
         private int cornerRadius = 10;
+        private int borderSize = 0;
+        private int borderRadius = 20;
+        private Color borderColor = Color.PaleVioletRed;
         public int CornerRadius
         {
             get { return cornerRadius; }

@@ -37,11 +37,14 @@ namespace mydiary
 
             Font menufont = new Font(privateFonts.Families[0], 22f);
             Font menufont2 = new Font(privateFonts.Families[1], 16f);
+            Font menufont3 = new Font(privateFonts.Families[0], 12f);
             lblsay.Font = menufont;
             lblwhatshoud.Font = menufont2;
             lblwhatshoud.ForeColor = Color.FromArgb(245, 77, 43);
             lblTodo.Font = menufont2;
             lblTodo.ForeColor = Color.FromArgb(245, 77, 43);
+            custombox1.Font = menufont3;
+            custombox1.ForeColor = Color.FromArgb(245, 77, 43);
             #endregion
 
         }
@@ -56,6 +59,10 @@ namespace mydiary
         {
 
         }
- 
+
+        private void lblsay_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

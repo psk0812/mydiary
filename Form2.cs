@@ -36,9 +36,10 @@ namespace mydiary
             //24f는 출력될 폰트사이즈
 
             Font menufont = new Font(privateFonts.Families[0], 22f);
-            Font menufont2 = new Font(privateFonts.Families[1], 16f);
+            Font menufont2 = new Font(privateFonts.Families[1], 18f);
             Font menufont3 = new Font(privateFonts.Families[0], 12f);
             label_tobe.Font = menufont;
+            label1.Font = menufont2;
 
 
             #endregion
@@ -105,6 +106,11 @@ namespace mydiary
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void custombox1_Load(object sender, EventArgs e)
         {
 
         }

@@ -16,7 +16,7 @@ namespace mydiary
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            try { Application.Run(new Form1()); }
+            try { Application.Run(new main()); }
            
             catch (Exception ex) { Console.WriteLine("예외 발생: " + ex.Message); }
 

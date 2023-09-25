@@ -1,7 +1,7 @@
 ﻿
 namespace mydiary
 {
-    partial class Form1
+    partial class main
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -30,31 +30,26 @@ namespace mydiary
         private void InitializeComponent()
         {
             this.MenuPannel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblsayhello = new System.Windows.Forms.Label();
+            this.lbleumgil = new System.Windows.Forms.Label();
+            this.titlebar = new System.Windows.Forms.Panel();
+            this.mainpanel = new System.Windows.Forms.Panel();
+            this.iconexit = new FontAwesome.Sharp.IconPictureBox();
+            this.iconmaximize = new FontAwesome.Sharp.IconPictureBox();
+            this.iconmini = new FontAwesome.Sharp.IconPictureBox();
             this.btnMonth = new FontAwesome.Sharp.IconButton();
             this.btnMindset = new FontAwesome.Sharp.IconButton();
             this.btnCalendar = new FontAwesome.Sharp.IconButton();
             this.btnTarget = new FontAwesome.Sharp.IconButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblsayhello = new System.Windows.Forms.Label();
-            this.lbleumgil = new System.Windows.Forms.Label();
             this.Menuicon = new FontAwesome.Sharp.IconPictureBox();
-            this.titlebar = new System.Windows.Forms.Panel();
-            this.iconexit = new FontAwesome.Sharp.IconPictureBox();
-            this.iconmaximize = new FontAwesome.Sharp.IconPictureBox();
-            this.iconmini = new FontAwesome.Sharp.IconPictureBox();
-            this.mainpanel = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.MenuPannel.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Menuicon)).BeginInit();
             this.titlebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconexit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconmini)).BeginInit();
-            this.mainpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Menuicon)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuPannel
@@ -71,82 +66,6 @@ namespace mydiary
             this.MenuPannel.Name = "MenuPannel";
             this.MenuPannel.Size = new System.Drawing.Size(200, 542);
             this.MenuPannel.TabIndex = 0;
-            // 
-            // btnMonth
-            // 
-            this.btnMonth.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMonth.FlatAppearance.BorderSize = 0;
-            this.btnMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMonth.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnMonth.IconChar = FontAwesome.Sharp.IconChar.Instagram;
-            this.btnMonth.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnMonth.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMonth.Location = new System.Drawing.Point(0, 408);
-            this.btnMonth.Name = "btnMonth";
-            this.btnMonth.Size = new System.Drawing.Size(200, 59);
-            this.btnMonth.TabIndex = 5;
-            this.btnMonth.Text = "달의 기록";
-            this.btnMonth.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMonth.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMonth.UseVisualStyleBackColor = true;
-            this.btnMonth.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnMonth_MouseClick);
-            // 
-            // btnMindset
-            // 
-            this.btnMindset.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMindset.FlatAppearance.BorderSize = 0;
-            this.btnMindset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMindset.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnMindset.IconChar = FontAwesome.Sharp.IconChar.Fire;
-            this.btnMindset.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnMindset.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMindset.Location = new System.Drawing.Point(0, 349);
-            this.btnMindset.Name = "btnMindset";
-            this.btnMindset.Size = new System.Drawing.Size(200, 59);
-            this.btnMindset.TabIndex = 4;
-            this.btnMindset.Text = "마인드셋";
-            this.btnMindset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMindset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMindset.UseVisualStyleBackColor = true;
-            this.btnMindset.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnMindset_MouseClick);
-            // 
-            // btnCalendar
-            // 
-            this.btnCalendar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCalendar.FlatAppearance.BorderSize = 0;
-            this.btnCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalendar.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnCalendar.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck;
-            this.btnCalendar.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnCalendar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCalendar.Location = new System.Drawing.Point(0, 290);
-            this.btnCalendar.Name = "btnCalendar";
-            this.btnCalendar.Size = new System.Drawing.Size(200, 59);
-            this.btnCalendar.TabIndex = 3;
-            this.btnCalendar.Text = "계획표";
-            this.btnCalendar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCalendar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCalendar.UseVisualStyleBackColor = true;
-            this.btnCalendar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnCalendar_MouseClick);
-            // 
-            // btnTarget
-            // 
-            this.btnTarget.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTarget.FlatAppearance.BorderSize = 0;
-            this.btnTarget.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTarget.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnTarget.IconChar = FontAwesome.Sharp.IconChar.Rocket;
-            this.btnTarget.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnTarget.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnTarget.Location = new System.Drawing.Point(0, 231);
-            this.btnTarget.Name = "btnTarget";
-            this.btnTarget.Size = new System.Drawing.Size(200, 59);
-            this.btnTarget.TabIndex = 2;
-            this.btnTarget.Text = "목표설정";
-            this.btnTarget.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTarget.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTarget.UseVisualStyleBackColor = true;
-            this.btnTarget.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnTarget_MouseClick);
             // 
             // panel1
             // 
@@ -180,21 +99,6 @@ namespace mydiary
             this.lbleumgil.Text = "eumgil";
             this.lbleumgil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Menuicon
-            // 
-            this.Menuicon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(60)))));
-            this.Menuicon.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Menuicon.IconChar = FontAwesome.Sharp.IconChar.FreeCodeCamp;
-            this.Menuicon.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Menuicon.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Menuicon.IconSize = 54;
-            this.Menuicon.Location = new System.Drawing.Point(22, 38);
-            this.Menuicon.Name = "Menuicon";
-            this.Menuicon.Size = new System.Drawing.Size(58, 54);
-            this.Menuicon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Menuicon.TabIndex = 0;
-            this.Menuicon.TabStop = false;
-            // 
             // titlebar
             // 
             this.titlebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(60)))));
@@ -207,6 +111,14 @@ namespace mydiary
             this.titlebar.Size = new System.Drawing.Size(779, 36);
             this.titlebar.TabIndex = 1;
             this.titlebar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.titlebar_MouseDown);
+            // 
+            // mainpanel
+            // 
+            this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainpanel.Location = new System.Drawing.Point(200, 36);
+            this.mainpanel.Name = "mainpanel";
+            this.mainpanel.Size = new System.Drawing.Size(779, 506);
+            this.mainpanel.TabIndex = 2;
             // 
             // iconexit
             // 
@@ -256,51 +168,101 @@ namespace mydiary
             this.iconmini.TabStop = false;
             this.iconmini.MouseClick += new System.Windows.Forms.MouseEventHandler(this.iconmini_MouseClick);
             // 
-            // mainpanel
+            // btnMonth
             // 
-            this.mainpanel.Controls.Add(this.panel5);
-            this.mainpanel.Controls.Add(this.panel4);
-            this.mainpanel.Controls.Add(this.panel3);
-            this.mainpanel.Controls.Add(this.panel2);
-            this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainpanel.Location = new System.Drawing.Point(200, 36);
-            this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(779, 506);
-            this.mainpanel.TabIndex = 2;
+            this.btnMonth.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMonth.FlatAppearance.BorderSize = 0;
+            this.btnMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMonth.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnMonth.IconChar = FontAwesome.Sharp.IconChar.Instagram;
+            this.btnMonth.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnMonth.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMonth.Location = new System.Drawing.Point(0, 408);
+            this.btnMonth.Name = "btnMonth";
+            this.btnMonth.Size = new System.Drawing.Size(200, 59);
+            this.btnMonth.TabIndex = 5;
+            this.btnMonth.Text = "달의 기록";
+            this.btnMonth.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMonth.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMonth.UseVisualStyleBackColor = true;
+            this.btnMonth.Click += new System.EventHandler(this.btnMonth_Click);
+            this.btnMonth.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnMonth_MouseClick);
             // 
-            // panel2
+            // btnMindset
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(779, 10);
-            this.panel2.TabIndex = 0;
+            this.btnMindset.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMindset.FlatAppearance.BorderSize = 0;
+            this.btnMindset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMindset.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnMindset.IconChar = FontAwesome.Sharp.IconChar.Fire;
+            this.btnMindset.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnMindset.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMindset.Location = new System.Drawing.Point(0, 349);
+            this.btnMindset.Name = "btnMindset";
+            this.btnMindset.Size = new System.Drawing.Size(200, 59);
+            this.btnMindset.TabIndex = 4;
+            this.btnMindset.Text = "비전보드";
+            this.btnMindset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMindset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMindset.UseVisualStyleBackColor = true;
+            this.btnMindset.Click += new System.EventHandler(this.btnMindset_Click);
+            this.btnMindset.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnMindset_MouseClick);
             // 
-            // panel3
+            // btnCalendar
             // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 10);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 496);
-            this.panel3.TabIndex = 1;
+            this.btnCalendar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCalendar.FlatAppearance.BorderSize = 0;
+            this.btnCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalendar.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnCalendar.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck;
+            this.btnCalendar.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnCalendar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCalendar.Location = new System.Drawing.Point(0, 290);
+            this.btnCalendar.Name = "btnCalendar";
+            this.btnCalendar.Size = new System.Drawing.Size(200, 59);
+            this.btnCalendar.TabIndex = 3;
+            this.btnCalendar.Text = "계획표";
+            this.btnCalendar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCalendar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCalendar.UseVisualStyleBackColor = true;
+            this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
+            this.btnCalendar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnCalendar_MouseClick);
             // 
-            // panel4
+            // btnTarget
             // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(769, 10);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 496);
-            this.panel4.TabIndex = 2;
+            this.btnTarget.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTarget.FlatAppearance.BorderSize = 0;
+            this.btnTarget.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTarget.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnTarget.IconChar = FontAwesome.Sharp.IconChar.Rocket;
+            this.btnTarget.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnTarget.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnTarget.Location = new System.Drawing.Point(0, 231);
+            this.btnTarget.Name = "btnTarget";
+            this.btnTarget.Size = new System.Drawing.Size(200, 59);
+            this.btnTarget.TabIndex = 2;
+            this.btnTarget.Text = "목표설정";
+            this.btnTarget.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTarget.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTarget.UseVisualStyleBackColor = true;
+            this.btnTarget.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnTarget_MouseClick);
             // 
-            // panel5
+            // Menuicon
             // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(10, 496);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(759, 10);
-            this.panel5.TabIndex = 3;
+            this.Menuicon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(60)))));
+            this.Menuicon.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Menuicon.IconChar = FontAwesome.Sharp.IconChar.FreeCodeCamp;
+            this.Menuicon.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Menuicon.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Menuicon.IconSize = 54;
+            this.Menuicon.Location = new System.Drawing.Point(22, 38);
+            this.Menuicon.Name = "Menuicon";
+            this.Menuicon.Size = new System.Drawing.Size(58, 54);
+            this.Menuicon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Menuicon.TabIndex = 0;
+            this.Menuicon.TabStop = false;
             // 
-            // Form1
+            // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -309,17 +271,14 @@ namespace mydiary
             this.Controls.Add(this.mainpanel);
             this.Controls.Add(this.titlebar);
             this.Controls.Add(this.MenuPannel);
-            this.Name = "Form1";
-          
-         
+            this.Name = "main";
             this.MenuPannel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Menuicon)).EndInit();
             this.titlebar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconexit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconmini)).EndInit();
-            this.mainpanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Menuicon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -340,10 +299,6 @@ namespace mydiary
         private FontAwesome.Sharp.IconPictureBox iconmaximize;
         private FontAwesome.Sharp.IconPictureBox iconmini;
         private System.Windows.Forms.Panel mainpanel;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
     }
 }
 

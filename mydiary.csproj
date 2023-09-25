@@ -32,6 +32,26 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
@@ -53,6 +73,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calendar.Designer.cs">
+      <DependentUpon>calendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="colortextbox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -62,20 +88,32 @@
     <Compile Include="custombox.Designer.cs">
       <DependentUpon>custombox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="monthlogs\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="monthlogs\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="plan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="plan.Designer.cs">
+      <DependentUpon>plan.cs</DependentUpon>
     </Compile>
     <Compile Include="menupannel.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="monthlog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="monthlog.Designer.cs">
+      <DependentUpon>monthlog.cs</DependentUpon>
     </Compile>
     <Compile Include="picuterboxCircle.cs">
       <SubType>Component</SubType>
@@ -85,14 +123,29 @@
     <Compile Include="radiuspanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="visionboardform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visionboardform.Designer.cs">
+      <DependentUpon>visionboardform.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="calendar.resx">
+      <DependentUpon>calendar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="custombox.resx">
       <DependentUpon>custombox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="monthlogs\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="plan.resx">
+      <DependentUpon>plan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="monthlog.resx">
+      <DependentUpon>monthlog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -104,6 +157,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="visionboardform.resx">
+      <DependentUpon>visionboardform.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="NanumSquareB.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -128,6 +184,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="cool.jpg" />
+    <Content Include="Properties\agenda_78320.ico" />
     <Content Include="Properties\checkbox-after.png" />
     <Content Include="Properties\checkbox-before.png" />
     <None Include="Resources\checkbox-after.png" />

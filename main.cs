@@ -13,14 +13,14 @@ using FontAwesome.Sharp;
 
 namespace mydiary
 {
-    public partial class Form1 : Form
+    public partial class main : Form
     {
 
         private IconButton currentbtn;
         private Form currentForm;
         private float aspectRatio = 955f / 558f;//비율 유지하기 위해 
 
-        public Form1()
+        public main()
         {
             InitializeComponent();
             int screenWidth = Screen.PrimaryScreen.Bounds.Width;
@@ -48,45 +48,50 @@ namespace mydiary
             btnCalendar.Font = menufont;
             btnMindset.Font = menufont;
             btnMonth.Font = menufont;
+
+          
         }
-        private async void OpenChildForm(Form childForm)
+        private void OpenChildForm(Form childForm)
         {
             try
             {
-                if (currentForm != null & currentForm != childForm)
+
+
+                if (currentForm != null)
                 {
                     currentForm.Close();
                 }
-
-               
                 currentForm = childForm;
-
-                
                 childForm.TopLevel = false;
                 childForm.FormBorderStyle = FormBorderStyle.None;
                 childForm.Dock = DockStyle.Fill;
                 mainpanel.Controls.Add(childForm);
-                mainpanel.Tag = childForm;
                 childForm.BringToFront();
                 childForm.Show();
-                
             }
-            catch
-            { }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"에러 발생: {ex.Message}", "에러", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // 예외 처리 코드 추가
+            }
         }
-           
+        
+        
 
 
-          
 
-    
+
+
+
+
 
         #region menubtn
-        private struct RGBColors
+        public struct RGBColors
         {
             public static Color color_btn_clicked = Color.FromArgb(243, 51, 102);
             public static Color color_btn_unclicked = Color.FromArgb(16, 33, 60);
             public static Color color_mouser_hover = Color.FromArgb(53, 61, 79);
+            public static Color color_pink = Color.FromArgb(254, 110, 135);
 
         }
 
@@ -141,11 +146,15 @@ namespace mydiary
         private void iconmaximize_MouseClick(object sender, MouseEventArgs e)
         {
             if (this.WindowState != FormWindowState.Maximized)
+            {
                 this.WindowState = FormWindowState.Maximized;
-                
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
 
-            else this.WindowState = FormWindowState.Normal;
-            OpenChildForm(currentForm); 
+            
         }
 
         private void iconexit_MouseClick(object sender, MouseEventArgs e)
@@ -166,9 +175,24 @@ namespace mydiary
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+
         #endregion
 
+        private void btnMindset_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new visionboardform());
+        }
 
+        private void btnMonth_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new monthlog());
+        }
 
+        private void btnCalendar_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new calendar());
+        }
     }
 }
+

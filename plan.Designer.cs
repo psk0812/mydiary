@@ -29,7 +29,6 @@ namespace mydiary
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formTarget));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.radiuspanel1 = new mydiary.radiuspanel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -44,7 +43,6 @@ namespace mydiary
             this.radiuspanel3 = new mydiary.radiuspanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.custombox1 = new mydiary.custombox();
@@ -52,12 +50,13 @@ namespace mydiary
             this.custombox3 = new mydiary.custombox();
             this.custombox4 = new mydiary.custombox();
             this.custombox5 = new mydiary.custombox();
-            this.iconDropDownButton1 = new FontAwesome.Sharp.IconDropDownButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.iconDropDownButton1 = new FontAwesome.Sharp.IconDropDownButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.radiuspanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -98,7 +97,7 @@ namespace mydiary
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.6633F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.3367F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(877, 594);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(763, 490);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // radiuspanel1
@@ -111,7 +110,7 @@ namespace mydiary
             this.radiuspanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radiuspanel1.Location = new System.Drawing.Point(3, 3);
             this.radiuspanel1.Name = "radiuspanel1";
-            this.radiuspanel1.Size = new System.Drawing.Size(871, 288);
+            this.radiuspanel1.Size = new System.Drawing.Size(757, 237);
             this.radiuspanel1.TabIndex = 3;
             // 
             // splitContainer1
@@ -129,8 +128,8 @@ namespace mydiary
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.picuterboxCircle1);
-            this.splitContainer1.Size = new System.Drawing.Size(871, 288);
-            this.splitContainer1.SplitterDistance = 604;
+            this.splitContainer1.Size = new System.Drawing.Size(757, 237);
+            this.splitContainer1.SplitterDistance = 524;
             this.splitContainer1.TabIndex = 0;
             // 
             // label_tobe
@@ -138,7 +137,7 @@ namespace mydiary
             this.label_tobe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_tobe.Location = new System.Drawing.Point(2, 2);
             this.label_tobe.Name = "label_tobe";
-            this.label_tobe.Size = new System.Drawing.Size(600, 284);
+            this.label_tobe.Size = new System.Drawing.Size(520, 233);
             this.label_tobe.TabIndex = 0;
             this.label_tobe.Text = "\"나는 해외 IT 대기업의 개발자가 될거다\"";
             this.label_tobe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -152,21 +151,22 @@ namespace mydiary
             this.picuterboxCircle1.BorderSize = 8;
             this.picuterboxCircle1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picuterboxCircle1.GradientAngle = 50F;
-            this.picuterboxCircle1.Image = ((System.Drawing.Image)(resources.GetObject("picuterboxCircle1.Image")));
+            this.picuterboxCircle1.Image = global::mydiary.Properties.Resources.cool;
             this.picuterboxCircle1.Location = new System.Drawing.Point(0, 0);
             this.picuterboxCircle1.MaximumSize = new System.Drawing.Size(400, 400);
             this.picuterboxCircle1.MinimumSize = new System.Drawing.Size(200, 200);
             this.picuterboxCircle1.Name = "picuterboxCircle1";
             this.picuterboxCircle1.Padding = new System.Windows.Forms.Padding(2);
-            this.picuterboxCircle1.Size = new System.Drawing.Size(263, 263);
+            this.picuterboxCircle1.Size = new System.Drawing.Size(229, 229);
             this.picuterboxCircle1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picuterboxCircle1.TabIndex = 3;
             this.picuterboxCircle1.TabStop = false;
+            this.picuterboxCircle1.DoubleClick += new System.EventHandler(this.picuterboxCircle1_DoubleClick);
             // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.Location = new System.Drawing.Point(3, 297);
+            this.splitContainer2.Location = new System.Drawing.Point(3, 246);
             this.splitContainer2.Name = "splitContainer2";
             // 
             // splitContainer2.Panel1
@@ -176,8 +176,8 @@ namespace mydiary
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.radiuspanel3);
-            this.splitContainer2.Size = new System.Drawing.Size(871, 294);
-            this.splitContainer2.SplitterDistance = 477;
+            this.splitContainer2.Size = new System.Drawing.Size(757, 241);
+            this.splitContainer2.SplitterDistance = 414;
             this.splitContainer2.TabIndex = 4;
             // 
             // radiuspanel2
@@ -189,7 +189,7 @@ namespace mydiary
             this.radiuspanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radiuspanel2.Location = new System.Drawing.Point(0, 0);
             this.radiuspanel2.Name = "radiuspanel2";
-            this.radiuspanel2.Size = new System.Drawing.Size(477, 294);
+            this.radiuspanel2.Size = new System.Drawing.Size(414, 241);
             this.radiuspanel2.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -204,7 +204,7 @@ namespace mydiary
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(477, 243);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(414, 190);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // panel1
@@ -212,10 +212,10 @@ namespace mydiary
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(50, 3);
+            this.panel1.Location = new System.Drawing.Point(44, 3);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 2);
-            this.panel1.Size = new System.Drawing.Size(375, 237);
+            this.panel1.Size = new System.Drawing.Size(325, 184);
             this.panel1.TabIndex = 0;
             // 
             // textBox1
@@ -225,7 +225,7 @@ namespace mydiary
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(369, 232);
+            this.textBox1.Size = new System.Drawing.Size(319, 179);
             this.textBox1.TabIndex = 0;
             this.textBox1.WordWrap = false;
             // 
@@ -236,7 +236,7 @@ namespace mydiary
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(477, 51);
+            this.label1.Size = new System.Drawing.Size(414, 51);
             this.label1.TabIndex = 0;
             this.label1.Text = "What Should I Do";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -250,7 +250,7 @@ namespace mydiary
             this.radiuspanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radiuspanel3.Location = new System.Drawing.Point(0, 0);
             this.radiuspanel3.Name = "radiuspanel3";
-            this.radiuspanel3.Size = new System.Drawing.Size(390, 294);
+            this.radiuspanel3.Size = new System.Drawing.Size(339, 241);
             this.radiuspanel3.TabIndex = 1;
             // 
             // tableLayoutPanel3
@@ -265,7 +265,7 @@ namespace mydiary
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(390, 243);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(339, 190);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // panel2
@@ -273,23 +273,11 @@ namespace mydiary
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(22, 3);
+            this.panel2.Location = new System.Drawing.Point(36, 3);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(3);
-            this.panel2.Size = new System.Drawing.Size(345, 237);
+            this.panel2.Size = new System.Drawing.Size(265, 184);
             this.panel2.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("굴림", 22F);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(390, 51);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "ToDo Check";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // panel3
             // 
@@ -298,7 +286,7 @@ namespace mydiary
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(339, 231);
+            this.panel3.Size = new System.Drawing.Size(259, 178);
             this.panel3.TabIndex = 0;
             // 
             // tableLayoutPanel4
@@ -328,7 +316,7 @@ namespace mydiary
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.7407F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.7407F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.205751F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(339, 231);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(259, 178);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // custombox1
@@ -339,12 +327,12 @@ namespace mydiary
             this.custombox1.BorderSize = 2;
             this.custombox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.custombox1.IsFocused = false;
-            this.custombox1.Location = new System.Drawing.Point(53, 14);
+            this.custombox1.Location = new System.Drawing.Point(41, 4);
             this.custombox1.Multiline = false;
             this.custombox1.Name = "custombox1";
             this.custombox1.Padding = new System.Windows.Forms.Padding(7);
             this.custombox1.PasswordChar = false;
-            this.custombox1.Size = new System.Drawing.Size(275, 28);
+            this.custombox1.Size = new System.Drawing.Size(208, 28);
             this.custombox1.TabIndex = 0;
             this.custombox1.Texts = "";
             this.custombox1.UnderlinedStyle = true;
@@ -357,12 +345,12 @@ namespace mydiary
             this.custombox2.BorderSize = 2;
             this.custombox2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.custombox2.IsFocused = false;
-            this.custombox2.Location = new System.Drawing.Point(53, 57);
+            this.custombox2.Location = new System.Drawing.Point(41, 38);
             this.custombox2.Multiline = false;
             this.custombox2.Name = "custombox2";
             this.custombox2.Padding = new System.Windows.Forms.Padding(7);
             this.custombox2.PasswordChar = false;
-            this.custombox2.Size = new System.Drawing.Size(275, 28);
+            this.custombox2.Size = new System.Drawing.Size(208, 28);
             this.custombox2.TabIndex = 1;
             this.custombox2.Texts = "";
             this.custombox2.UnderlinedStyle = true;
@@ -375,12 +363,12 @@ namespace mydiary
             this.custombox3.BorderSize = 2;
             this.custombox3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.custombox3.IsFocused = false;
-            this.custombox3.Location = new System.Drawing.Point(53, 100);
+            this.custombox3.Location = new System.Drawing.Point(41, 71);
             this.custombox3.Multiline = false;
             this.custombox3.Name = "custombox3";
             this.custombox3.Padding = new System.Windows.Forms.Padding(7);
             this.custombox3.PasswordChar = false;
-            this.custombox3.Size = new System.Drawing.Size(275, 28);
+            this.custombox3.Size = new System.Drawing.Size(208, 28);
             this.custombox3.TabIndex = 2;
             this.custombox3.Texts = "";
             this.custombox3.UnderlinedStyle = true;
@@ -393,12 +381,12 @@ namespace mydiary
             this.custombox4.BorderSize = 2;
             this.custombox4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.custombox4.IsFocused = false;
-            this.custombox4.Location = new System.Drawing.Point(53, 143);
+            this.custombox4.Location = new System.Drawing.Point(41, 104);
             this.custombox4.Multiline = false;
             this.custombox4.Name = "custombox4";
             this.custombox4.Padding = new System.Windows.Forms.Padding(7);
             this.custombox4.PasswordChar = false;
-            this.custombox4.Size = new System.Drawing.Size(275, 28);
+            this.custombox4.Size = new System.Drawing.Size(208, 28);
             this.custombox4.TabIndex = 3;
             this.custombox4.Texts = "";
             this.custombox4.UnderlinedStyle = true;
@@ -411,15 +399,87 @@ namespace mydiary
             this.custombox5.BorderSize = 2;
             this.custombox5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.custombox5.IsFocused = false;
-            this.custombox5.Location = new System.Drawing.Point(53, 186);
+            this.custombox5.Location = new System.Drawing.Point(41, 137);
             this.custombox5.Multiline = false;
             this.custombox5.Name = "custombox5";
             this.custombox5.Padding = new System.Windows.Forms.Padding(7);
             this.custombox5.PasswordChar = false;
-            this.custombox5.Size = new System.Drawing.Size(275, 28);
+            this.custombox5.Size = new System.Drawing.Size(208, 28);
             this.custombox5.TabIndex = 4;
             this.custombox5.Texts = "";
             this.custombox5.UnderlinedStyle = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::mydiary.Properties.Resources.checkbox_before;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::mydiary.Properties.Resources.checkbox_before;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 38);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(35, 30);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::mydiary.Properties.Resources.checkbox_before;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 71);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(35, 30);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Image = global::mydiary.Properties.Resources.checkbox_before;
+            this.pictureBox4.Location = new System.Drawing.Point(3, 104);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(35, 30);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox5.Image = global::mydiary.Properties.Resources.checkbox_before;
+            this.pictureBox5.Location = new System.Drawing.Point(3, 137);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(35, 30);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 9;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("굴림", 22F);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(339, 51);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "ToDo Check";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // iconDropDownButton1
             // 
@@ -430,77 +490,15 @@ namespace mydiary
             this.iconDropDownButton1.Size = new System.Drawing.Size(23, 23);
             this.iconDropDownButton1.Text = "iconDropDownButton1";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::mydiary.Properties.Resources.checkbox_before;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 42);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::mydiary.Properties.Resources.checkbox_before;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 48);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 40);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::mydiary.Properties.Resources.checkbox_before;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 91);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(47, 40);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Image = global::mydiary.Properties.Resources.checkbox_before;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 134);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(47, 40);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Image = global::mydiary.Properties.Resources.checkbox_before;
-            this.pictureBox5.Location = new System.Drawing.Point(3, 177);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(47, 40);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 9;
-            this.pictureBox5.TabStop = false;
-            // 
             // formTarget
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(877, 594);
+            this.ClientSize = new System.Drawing.Size(763, 490);
             this.ControlBox = false;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "formTarget";
-            this.Shown += new System.EventHandler(this.formTarget_Shown);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.radiuspanel1.ResumeLayout(false);

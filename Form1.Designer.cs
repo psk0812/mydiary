@@ -310,8 +310,8 @@ namespace mydiary
             this.Controls.Add(this.titlebar);
             this.Controls.Add(this.MenuPannel);
             this.Name = "Form1";
-            this.ResizeEnd += new System.EventHandler(this.Form1_ResizeEnd);
-            this.Resize += new System.EventHandler(this.Form1_Resize);
+          
+         
             this.MenuPannel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Menuicon)).EndInit();

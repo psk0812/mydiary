@@ -53,6 +53,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="colortextbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="custombox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +126,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\checkbox-after.png" />
+    <Content Include="Properties\checkbox-before.png" />
+    <None Include="Resources\checkbox-after.png" />
+    <None Include="Resources\checkbox-before.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

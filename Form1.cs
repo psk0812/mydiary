@@ -23,10 +23,18 @@ namespace mydiary
         public Form1()
         {
             InitializeComponent();
-            this.MinimumSize = new Size(955, 558); 
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+
+            // 화면의 70% 크기로 윈폼 크기를 설정합니다.
+            int newWidth = (int)(screenWidth * 0.7);
+            int newHeight = (int)(screenHeight * 0.7);
+            this.Size = new System.Drawing.Size(newWidth, newHeight);
+
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+
             PrivateFontCollection privateFonts = new PrivateFontCollection();
             
-
             //폰트파일명 명시
             privateFonts.AddFontFile("SDMiSaeng.ttf");
             privateFonts.AddFontFile("NanumSquareR.ttf");
@@ -53,6 +61,7 @@ namespace mydiary
                
                 currentForm = childForm;
 
+                
                 childForm.TopLevel = false;
                 childForm.FormBorderStyle = FormBorderStyle.None;
                 childForm.Dock = DockStyle.Fill;
@@ -60,6 +69,7 @@ namespace mydiary
                 mainpanel.Tag = childForm;
                 childForm.BringToFront();
                 childForm.Show();
+                
             }
             catch
             { }
@@ -158,21 +168,7 @@ namespace mydiary
         }
         #endregion
 
-        private void Form1_Resize(object sender, EventArgs e)
-        {
-           
-        }
 
-        private void Form1_ResizeEnd(object sender, EventArgs e)
-        {
-            int newWidth = this.Width;
-            int newHeight = (int)(newWidth / aspectRatio);
 
-            // 폼의 크기를 비율에 따라 조절
-            this.Size = new Size(newWidth, newHeight);
-
-            OpenChildForm(currentForm);
-
-        }
     }
 }

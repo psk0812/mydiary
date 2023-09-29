@@ -31,6 +31,7 @@ namespace mydiary
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.circlepic1 = new mydiary.circlepic();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
@@ -57,12 +58,12 @@ namespace mydiary
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.circlepic1 = new mydiary.circlepic();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circlepic1)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
@@ -78,7 +79,6 @@ namespace mydiary
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circlepic1)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -114,6 +114,23 @@ namespace mydiary
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(747, 200);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // circlepic1
+            // 
+            this.circlepic1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Triangle;
+            this.circlepic1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.circlepic1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.circlepic1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            this.circlepic1.BorderSize = 8;
+            this.circlepic1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.circlepic1.GradientAngle = 50F;
+            this.circlepic1.Location = new System.Drawing.Point(557, 3);
+            this.circlepic1.Name = "circlepic1";
+            this.circlepic1.Size = new System.Drawing.Size(187, 187);
+            this.circlepic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.circlepic1.TabIndex = 1;
+            this.circlepic1.TabStop = false;
+            this.circlepic1.Click += new System.EventHandler(this.circlepic1_Click);
             // 
             // tableLayoutPanel6
             // 
@@ -486,23 +503,6 @@ namespace mydiary
             this.iconButton5.UseVisualStyleBackColor = true;
             this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
-            // circlepic1
-            // 
-            this.circlepic1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Triangle;
-            this.circlepic1.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.circlepic1.BorderColor2 = System.Drawing.Color.HotPink;
-            this.circlepic1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
-            this.circlepic1.BorderSize = 8;
-            this.circlepic1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.circlepic1.GradientAngle = 50F;
-            this.circlepic1.Location = new System.Drawing.Point(557, 3);
-            this.circlepic1.Name = "circlepic1";
-            this.circlepic1.Size = new System.Drawing.Size(187, 187);
-            this.circlepic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.circlepic1.TabIndex = 1;
-            this.circlepic1.TabStop = false;
-            this.circlepic1.Click += new System.EventHandler(this.circlepic1_Click);
-            // 
             // target
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -517,6 +517,7 @@ namespace mydiary
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.circlepic1)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.splitContainer2.Panel1.ResumeLayout(false);
@@ -541,7 +542,6 @@ namespace mydiary
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circlepic1)).EndInit();
             this.ResumeLayout(false);
 
         }

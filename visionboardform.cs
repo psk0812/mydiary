@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,72 +20,128 @@ namespace mydiary
         #region updatebox wih double click
         private void visionpictureBox1_DoubleClick(object sender, EventArgs e)
         {
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            try
             {
-                openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                string filePath = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_1.txt");
+                using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
-                    string imagePath = openFileDialog.FileName;
+                    openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
+                    if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        string imagePath = openFileDialog.FileName;
 
-                    visionpictureBox1.Image = Image.FromFile(imagePath);
+                        visionpictureBox1.Image = Image.FromFile(imagePath);
+                        using (StreamWriter writer = new StreamWriter(filePath))
+                        {
+                            writer.WriteLine(imagePath);
+                        }
+                    }
+
                 }
             }
+            catch { }
+    
         }
 
         private void visionpictureBox2_DoubleClick(object sender, EventArgs e)
         {
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            try
             {
-                openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                string filePath = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_2.txt");
+                using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
-                    string imagePath = openFileDialog.FileName;
+                    openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
+                    if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        string imagePath = openFileDialog.FileName;
 
-                    visionpictureBox2.Image = Image.FromFile(imagePath);
+                        visionpictureBox2.Image = Image.FromFile(imagePath);
+                        using (StreamWriter writer = new StreamWriter(filePath))
+                        {
+                            writer.WriteLine(imagePath);
+                        }
+                    }
+
                 }
             }
+            catch { }
         }
 
         private void visionpictureBox3_DoubleClick(object sender, EventArgs e)
         {
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            try
             {
-                openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                string filePath = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_3.txt");
+                using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
-                    string imagePath = openFileDialog.FileName;
+                    openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
+                    if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        string imagePath = openFileDialog.FileName;
 
-                    visionpictureBox3.Image = Image.FromFile(imagePath);
+                        visionpictureBox3.Image = Image.FromFile(imagePath);
+                        using (StreamWriter writer = new StreamWriter(filePath))
+                        {
+                            writer.WriteLine(imagePath);
+                        }
+                    }
+
                 }
             }
+            catch { }
         }
 
         private void visionpictureBox4_DoubleClick(object sender, EventArgs e)
         {
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            try
             {
-                openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                string filePath = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_4.txt");
+                using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
-                    string imagePath = openFileDialog.FileName;
+                    openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
+                    if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        string imagePath = openFileDialog.FileName;
 
-                    visionpictureBox4.Image = Image.FromFile(imagePath);
+                        visionpictureBox4.Image = Image.FromFile(imagePath);
+                        using (StreamWriter writer = new StreamWriter(filePath))
+                        {
+                            writer.WriteLine(imagePath);
+                        }
+                    }
+
                 }
             }
+            catch { }
         }
 
         private void visionpictureBox5_DoubleClick(object sender, EventArgs e)
         {
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            try
             {
-                openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                string filePath = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_5.txt");
+                using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
-                    string imagePath = openFileDialog.FileName;
+                    openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
+                    if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        string imagePath = openFileDialog.FileName;
 
-                    visionpictureBox5.Image = Image.FromFile(imagePath);
+                        visionpictureBox5.Image = Image.FromFile(imagePath);
+                        using (StreamWriter writer = new StreamWriter(filePath))
+                        {
+                            writer.WriteLine(imagePath);
+                        }
+                    }
+
                 }
             }
+            catch { }
         }
 
         private void pictureBox1_DoubleClick(object sender, EventArgs e)

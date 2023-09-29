@@ -13,7 +13,8 @@ namespace mydiary
 {
     public partial class calendar : Form
     {
-        int month, year;
+        int month, year,day;
+        int nowmonth;
         Font fontdays;
 
         public calendar()
@@ -77,6 +78,8 @@ namespace mydiary
                 daylabel.Text = "  " + count.ToString();
                 daylabel.Margin = new Padding(20, 10, 0, 0);
                 daylabel.Font = new System.Drawing.Font("Arial", 12, System.Drawing.FontStyle.Bold);
+                if (day == count && month == nowmonth)
+                { daylabel.ForeColor = Color.RoyalBlue; }
                 targetPanel.Controls.Add(daylabel);
             }
         }
@@ -86,6 +89,11 @@ namespace mydiary
             DateTime now = DateTime.Now;
             month = now.Month;
             year = now.Year;
+            day = now.Day;
+            nowmonth= now.Month;
+
+            day = day * 1;
+            
 
 
             label8.Text ="Month"+ month.ToString() ;
@@ -117,6 +125,10 @@ namespace mydiary
                 daylabel.Text = "  "+count.ToString();
                 daylabel.Margin = new Padding(20, 10, 0, 0);
                 daylabel.Font = new System.Drawing.Font("Arial", 12, System.Drawing.FontStyle.Bold);
+
+                if (day == count)
+                { daylabel.ForeColor = Color.RoyalBlue; }
+
                 targetPanel.Controls.Add(daylabel);
             }
         }
@@ -149,7 +161,7 @@ namespace mydiary
                 string PanelName = "panel" + i;
 
                 Panel targetPanel = (Panel)tableLayoutPanel1.Controls.Find(PanelName, true)[0];
-                
+                targetPanel.BackColor = Color.White;
                 targetPanel.Dock = DockStyle.Fill;
 
                 count += 1;
@@ -162,6 +174,8 @@ namespace mydiary
                 daylabel.Text = "  " + count.ToString();
                 daylabel.Margin = new Padding(20, 10, 0, 0);
                 daylabel.Font = new System.Drawing.Font("Arial", 12, System.Drawing.FontStyle.Bold);
+                if (day == count && month == nowmonth)
+                { daylabel.ForeColor = Color.RoyalBlue; }
                 targetPanel.Controls.Add(daylabel);
             }
         }

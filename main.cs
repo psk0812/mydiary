@@ -64,7 +64,10 @@ namespace mydiary
 
                 if (currentForm != null)
                 {
+                    string targetName=currentForm.Name;
+                    Form targetForm = (Form)mainpanel.Controls.Find(targetName, true)[0];
                     currentForm.Close();
+                    targetForm.Dispose();
                 }
                 
 

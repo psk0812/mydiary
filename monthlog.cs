@@ -3,6 +3,7 @@ using mydiary.monthlogs;
 using System;
 using System.Drawing;
 using System.Drawing.Text;
+using System.IO;
 using System.Windows.Forms;
 using static mydiary.main;
 
@@ -15,6 +16,19 @@ namespace mydiary
         private Form currentForm;
         private object montform;
 
+        string Text_Month_1;
+        string Text_Month_2;
+        string Text_Month_3;
+        string Text_Month_4;
+        string Text_Month_5;
+        string Text_Month_6;
+        string Text_Month_7;
+        string Text_Month_8;
+        string Text_Month_9;
+        string Text_Month_10;
+        string Text_Month_11;
+        string Text_Month_12; 
+       
         public monthlog()
         {
             InitializeComponent();
@@ -79,6 +93,22 @@ namespace mydiary
             iconButton12.ForeColor = RGBColors.color_pink;
             iconButton12.FlatAppearance.BorderColor = System.Drawing.Color.White;
             #endregion
+
+
+            string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            
+            Text_Month_1 = Path.Combine(appDirectory, @"..\..\..\data\month_1.txt");
+            Text_Month_2 = Path.Combine(appDirectory, @"..\..\..\data\month_2.txt");
+            Text_Month_3 = Path.Combine(appDirectory, @"..\..\..\data\month_3.txt");
+            Text_Month_4 = Path.Combine(appDirectory, @"..\..\..\data\month_4.txt");
+            Text_Month_5 = Path.Combine(appDirectory, @"..\..\..\data\month_5.txt");
+            Text_Month_6 = Path.Combine(appDirectory, @"..\..\..\data\month_6.txt");
+            Text_Month_7 = Path.Combine(appDirectory, @"..\..\..\data\month_7.txt");
+            Text_Month_8 = Path.Combine(appDirectory, @"..\..\..\data\month_8.txt");
+            Text_Month_9 = Path.Combine(appDirectory, @"..\..\..\data\month_9.txt");
+            Text_Month_10 = Path.Combine(appDirectory, @"..\..\..\data\month_10.txt");
+            Text_Month_11 = Path.Combine(appDirectory, @"..\..\..\data\month_11.txt");
+            Text_Month_12 = Path.Combine(appDirectory, @"..\..\..\data\month_12.txt");
         }
 
 
@@ -168,72 +198,110 @@ namespace mydiary
         private void iconButton1_Click(object sender, EventArgs e)
         {
             Form1 monthform = new Form1();
+            string[] whatshould = File.ReadAllLines(Text_Month_1);
+            monthform.TextBox1 = whatshould;
+            monthform.FilePath = Text_Month_1;
             monthform.ShowDialog();
+
+            
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
             Form1 monthform = new Form1();
+            string[] whatshould = File.ReadAllLines(Text_Month_2);
+            monthform.FilePath = Text_Month_2;
+            monthform.TextBox1 = whatshould;
             monthform.ShowDialog();
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
             Form1 monthform = new Form1();
+            string[] whatshould = File.ReadAllLines(Text_Month_3);
+            monthform.FilePath = Text_Month_3;
+            monthform.TextBox1 = whatshould;
             monthform.ShowDialog();
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
             Form1 monthform = new Form1();
+            string[] whatshould = File.ReadAllLines(Text_Month_4);
+            monthform.FilePath = Text_Month_4;
+            monthform.TextBox1 = whatshould;
             monthform.ShowDialog();
         }
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
             Form1 monthform = new Form1();
+            string[] whatshould = File.ReadAllLines(Text_Month_5);
+            monthform.FilePath = Text_Month_5;
+            monthform.TextBox1 = whatshould;
             monthform.ShowDialog();
         }
 
         private void iconButton6_Click(object sender, EventArgs e)
         {
             Form1 monthform = new Form1();
+            string[] whatshould = File.ReadAllLines(Text_Month_6);
+            monthform.FilePath = Text_Month_6;
+            monthform.TextBox1 = whatshould;
             monthform.ShowDialog();
         }
 
         private void iconButton7_Click(object sender, EventArgs e)
         {
             Form1 monthform = new Form1();
+            string[] whatshould = File.ReadAllLines(Text_Month_7);
+            monthform.FilePath = Text_Month_7;
+            monthform.TextBox1 = whatshould;
             monthform.ShowDialog();
         }
 
         private void iconButton8_Click(object sender, EventArgs e)
         {
             Form1 monthform = new Form1();
+            string[] whatshould = File.ReadAllLines(Text_Month_8);
+            monthform.FilePath = Text_Month_8;
+            monthform.TextBox1 = whatshould;
             monthform.ShowDialog();
         }
 
         private void iconButton9_Click(object sender, EventArgs e)
         {
             Form1 monthform = new Form1();
+            string[] whatshould = File.ReadAllLines(Text_Month_9);
+            monthform.FilePath = Text_Month_9;
+            monthform.TextBox1 = whatshould;
             monthform.ShowDialog();
         }
 
         private void iconButton10_Click(object sender, EventArgs e)
         {
             Form1 monthform = new Form1();
+            string[] whatshould = File.ReadAllLines(Text_Month_10);
+            monthform.FilePath = Text_Month_10;
+            monthform.TextBox1 = whatshould;
             monthform.ShowDialog();
         }
 
         private void iconButton11_Click(object sender, EventArgs e)
         {
             Form1 monthform = new Form1();
+            string[] whatshould = File.ReadAllLines(Text_Month_11);
+            monthform.FilePath = Text_Month_11;
+            monthform.TextBox1 = whatshould;
             monthform.ShowDialog();
         }
 
         private void iconButton12_Click(object sender, EventArgs e)
         {
             Form1 monthform = new Form1();
+            string[] whatshould = File.ReadAllLines(Text_Month_12);
+            monthform.FilePath = Text_Month_12;
+            monthform.TextBox1 = whatshould;
             monthform.ShowDialog();
         }
         #endregion

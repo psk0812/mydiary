@@ -69,11 +69,11 @@ namespace mydiary
 
             // 파일 경로 지정
             string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            Text_targetpicbox = Path.Combine(appDirectory, @"..\..\..\mydiary\data\targetpicbox.txt");
-            Text_target1 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\target_1.txt");
-            Text_target2 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\target_2.txt");
-            Text_target3 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\target_3.txt");
-            Text_target4 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\target_4.txt");
+            Text_targetpicbox = Path.Combine(appDirectory, @"..\..\..\data\targetpicbox.txt");
+            Text_target1 = Path.Combine(appDirectory, @"..\..\..\data\target_1.txt");
+            Text_target2 = Path.Combine(appDirectory, @"..\..\..\data\target_2.txt");
+            Text_target3 = Path.Combine(appDirectory, @"..\..\..\data\target_3.txt");
+            Text_target4 = Path.Combine(appDirectory, @"..\..\..\data\target_4.txt");
             // 파일 경로 지정
 
 
@@ -149,7 +149,8 @@ namespace mydiary
         private void circlepic1_Click(object sender, EventArgs e)
         {
             string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string filePath = Path.Combine(appDirectory, @"..\..\..\mydiary\data\targetpicbox.txt");
+            string filePath = Path.Combine(appDirectory, @"..\..\..\data\targetpicbox.txt");
+            Console.WriteLine(filePath);
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";

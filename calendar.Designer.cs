@@ -73,6 +73,7 @@ namespace mydiary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(763, 467);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Previous);

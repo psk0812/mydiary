@@ -30,26 +30,26 @@ namespace mydiary
         private void InitializeComponent()
         {
             this.MenuPannel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblsayhello = new System.Windows.Forms.Label();
-            this.lbleumgil = new System.Windows.Forms.Label();
-            this.titlebar = new System.Windows.Forms.Panel();
-            this.mainpanel = new System.Windows.Forms.Panel();
-            this.iconexit = new FontAwesome.Sharp.IconPictureBox();
-            this.iconmaximize = new FontAwesome.Sharp.IconPictureBox();
-            this.iconmini = new FontAwesome.Sharp.IconPictureBox();
             this.btnMonth = new FontAwesome.Sharp.IconButton();
             this.btnMindset = new FontAwesome.Sharp.IconButton();
             this.btnCalendar = new FontAwesome.Sharp.IconButton();
             this.btnTarget = new FontAwesome.Sharp.IconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblsayhello = new System.Windows.Forms.Label();
+            this.lbleumgil = new System.Windows.Forms.Label();
             this.Menuicon = new FontAwesome.Sharp.IconPictureBox();
+            this.titlebar = new System.Windows.Forms.Panel();
+            this.iconexit = new FontAwesome.Sharp.IconPictureBox();
+            this.iconmaximize = new FontAwesome.Sharp.IconPictureBox();
+            this.iconmini = new FontAwesome.Sharp.IconPictureBox();
+            this.mainpanel = new System.Windows.Forms.Panel();
             this.MenuPannel.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Menuicon)).BeginInit();
             this.titlebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconexit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconmini)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Menuicon)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuPannel
@@ -66,107 +66,6 @@ namespace mydiary
             this.MenuPannel.Name = "MenuPannel";
             this.MenuPannel.Size = new System.Drawing.Size(200, 542);
             this.MenuPannel.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.lblsayhello);
-            this.panel1.Controls.Add(this.lbleumgil);
-            this.panel1.Controls.Add(this.Menuicon);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 231);
-            this.panel1.TabIndex = 1;
-            // 
-            // lblsayhello
-            // 
-            this.lblsayhello.Font = new System.Drawing.Font("굴림", 12F);
-            this.lblsayhello.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.lblsayhello.Location = new System.Drawing.Point(22, 99);
-            this.lblsayhello.Name = "lblsayhello";
-            this.lblsayhello.Size = new System.Drawing.Size(155, 91);
-            this.lblsayhello.TabIndex = 2;
-            this.lblsayhello.Text = "사람의 꿈은 죽지않아";
-            // 
-            // lbleumgil
-            // 
-            this.lbleumgil.Font = new System.Drawing.Font("Britannic Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbleumgil.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.lbleumgil.Location = new System.Drawing.Point(77, 38);
-            this.lbleumgil.Name = "lbleumgil";
-            this.lbleumgil.Size = new System.Drawing.Size(100, 54);
-            this.lbleumgil.TabIndex = 1;
-            this.lbleumgil.Text = "eumgil";
-            this.lbleumgil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // titlebar
-            // 
-            this.titlebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(60)))));
-            this.titlebar.Controls.Add(this.iconexit);
-            this.titlebar.Controls.Add(this.iconmaximize);
-            this.titlebar.Controls.Add(this.iconmini);
-            this.titlebar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.titlebar.Location = new System.Drawing.Point(200, 0);
-            this.titlebar.Name = "titlebar";
-            this.titlebar.Size = new System.Drawing.Size(779, 36);
-            this.titlebar.TabIndex = 1;
-            this.titlebar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.titlebar_MouseDown);
-            // 
-            // mainpanel
-            // 
-            this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainpanel.Location = new System.Drawing.Point(200, 36);
-            this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(779, 506);
-            this.mainpanel.TabIndex = 2;
-            // 
-            // iconexit
-            // 
-            this.iconexit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconexit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(60)))));
-            this.iconexit.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.iconexit.IconChar = FontAwesome.Sharp.IconChar.TimesRectangle;
-            this.iconexit.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.iconexit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconexit.IconSize = 20;
-            this.iconexit.Location = new System.Drawing.Point(721, 12);
-            this.iconexit.Name = "iconexit";
-            this.iconexit.Size = new System.Drawing.Size(21, 20);
-            this.iconexit.TabIndex = 2;
-            this.iconexit.TabStop = false;
-            this.iconexit.MouseClick += new System.Windows.Forms.MouseEventHandler(this.iconexit_MouseClick);
-            // 
-            // iconmaximize
-            // 
-            this.iconmaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconmaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(60)))));
-            this.iconmaximize.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.iconmaximize.IconChar = FontAwesome.Sharp.IconChar.Maximize;
-            this.iconmaximize.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.iconmaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconmaximize.IconSize = 20;
-            this.iconmaximize.Location = new System.Drawing.Point(694, 12);
-            this.iconmaximize.Name = "iconmaximize";
-            this.iconmaximize.Size = new System.Drawing.Size(21, 20);
-            this.iconmaximize.TabIndex = 1;
-            this.iconmaximize.TabStop = false;
-            this.iconmaximize.MouseClick += new System.Windows.Forms.MouseEventHandler(this.iconmaximize_MouseClick);
-            // 
-            // iconmini
-            // 
-            this.iconmini.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconmini.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(60)))));
-            this.iconmini.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.iconmini.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.iconmini.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.iconmini.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconmini.IconSize = 20;
-            this.iconmini.Location = new System.Drawing.Point(667, 12);
-            this.iconmini.Name = "iconmini";
-            this.iconmini.Size = new System.Drawing.Size(21, 20);
-            this.iconmini.TabIndex = 0;
-            this.iconmini.TabStop = false;
-            this.iconmini.MouseClick += new System.Windows.Forms.MouseEventHandler(this.iconmini_MouseClick);
             // 
             // btnMonth
             // 
@@ -245,7 +144,40 @@ namespace mydiary
             this.btnTarget.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTarget.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTarget.UseVisualStyleBackColor = true;
+            this.btnTarget.Click += new System.EventHandler(this.btnTarget_Click);
             this.btnTarget.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnTarget_MouseClick);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lblsayhello);
+            this.panel1.Controls.Add(this.lbleumgil);
+            this.panel1.Controls.Add(this.Menuicon);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 231);
+            this.panel1.TabIndex = 1;
+            // 
+            // lblsayhello
+            // 
+            this.lblsayhello.Font = new System.Drawing.Font("굴림", 12F);
+            this.lblsayhello.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblsayhello.Location = new System.Drawing.Point(22, 99);
+            this.lblsayhello.Name = "lblsayhello";
+            this.lblsayhello.Size = new System.Drawing.Size(155, 91);
+            this.lblsayhello.TabIndex = 2;
+            this.lblsayhello.Text = "사람의 꿈은 죽지않아";
+            // 
+            // lbleumgil
+            // 
+            this.lbleumgil.Font = new System.Drawing.Font("Britannic Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbleumgil.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lbleumgil.Location = new System.Drawing.Point(77, 38);
+            this.lbleumgil.Name = "lbleumgil";
+            this.lbleumgil.Size = new System.Drawing.Size(100, 54);
+            this.lbleumgil.TabIndex = 1;
+            this.lbleumgil.Text = "eumgil";
+            this.lbleumgil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Menuicon
             // 
@@ -262,6 +194,75 @@ namespace mydiary
             this.Menuicon.TabIndex = 0;
             this.Menuicon.TabStop = false;
             // 
+            // titlebar
+            // 
+            this.titlebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(60)))));
+            this.titlebar.Controls.Add(this.iconexit);
+            this.titlebar.Controls.Add(this.iconmaximize);
+            this.titlebar.Controls.Add(this.iconmini);
+            this.titlebar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.titlebar.Location = new System.Drawing.Point(200, 0);
+            this.titlebar.Name = "titlebar";
+            this.titlebar.Size = new System.Drawing.Size(779, 36);
+            this.titlebar.TabIndex = 1;
+            this.titlebar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.titlebar_MouseDown);
+            // 
+            // iconexit
+            // 
+            this.iconexit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconexit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(60)))));
+            this.iconexit.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.iconexit.IconChar = FontAwesome.Sharp.IconChar.TimesRectangle;
+            this.iconexit.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.iconexit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconexit.IconSize = 20;
+            this.iconexit.Location = new System.Drawing.Point(721, 12);
+            this.iconexit.Name = "iconexit";
+            this.iconexit.Size = new System.Drawing.Size(21, 20);
+            this.iconexit.TabIndex = 2;
+            this.iconexit.TabStop = false;
+            this.iconexit.MouseClick += new System.Windows.Forms.MouseEventHandler(this.iconexit_MouseClick);
+            // 
+            // iconmaximize
+            // 
+            this.iconmaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconmaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(60)))));
+            this.iconmaximize.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.iconmaximize.IconChar = FontAwesome.Sharp.IconChar.Maximize;
+            this.iconmaximize.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.iconmaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconmaximize.IconSize = 20;
+            this.iconmaximize.Location = new System.Drawing.Point(694, 12);
+            this.iconmaximize.Name = "iconmaximize";
+            this.iconmaximize.Size = new System.Drawing.Size(21, 20);
+            this.iconmaximize.TabIndex = 1;
+            this.iconmaximize.TabStop = false;
+            this.iconmaximize.MouseClick += new System.Windows.Forms.MouseEventHandler(this.iconmaximize_MouseClick);
+            // 
+            // iconmini
+            // 
+            this.iconmini.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconmini.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(33)))), ((int)(((byte)(60)))));
+            this.iconmini.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.iconmini.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.iconmini.IconColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.iconmini.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconmini.IconSize = 20;
+            this.iconmini.Location = new System.Drawing.Point(667, 12);
+            this.iconmini.Name = "iconmini";
+            this.iconmini.Size = new System.Drawing.Size(21, 20);
+            this.iconmini.TabIndex = 0;
+            this.iconmini.TabStop = false;
+            this.iconmini.MouseClick += new System.Windows.Forms.MouseEventHandler(this.iconmini_MouseClick);
+            // 
+            // mainpanel
+            // 
+            this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainpanel.Location = new System.Drawing.Point(200, 36);
+            this.mainpanel.Name = "mainpanel";
+            this.mainpanel.Size = new System.Drawing.Size(779, 506);
+            this.mainpanel.TabIndex = 2;
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -274,11 +275,11 @@ namespace mydiary
             this.Name = "main";
             this.MenuPannel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Menuicon)).EndInit();
             this.titlebar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconexit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconmini)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Menuicon)).EndInit();
             this.ResumeLayout(false);
 
         }

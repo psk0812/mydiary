@@ -18,6 +18,8 @@ namespace mydiary
 
         private IconButton currentbtn;
         private Form currentForm;
+        private String childFormname;
+        private String currentformname;
         private float aspectRatio = 955f / 558f;//비율 유지하기 위해 
 
         public main()
@@ -49,7 +51,10 @@ namespace mydiary
             btnMindset.Font = menufont;
             btnMonth.Font = menufont;
 
-          
+           
+            childFormname = "formTarget";
+            currentformname = "formTarget";
+            OpenChildForm(new target());
         }
         private void OpenChildForm(Form childForm)
         {
@@ -61,13 +66,17 @@ namespace mydiary
                 {
                     currentForm.Close();
                 }
-                currentForm = childForm;
-                childForm.TopLevel = false;
-                childForm.FormBorderStyle = FormBorderStyle.None;
-                childForm.Dock = DockStyle.Fill;
-                mainpanel.Controls.Add(childForm);
-                childForm.BringToFront();
-                childForm.Show();
+                
+
+                    currentformname = childFormname;
+                    currentForm = childForm;
+                    childForm.TopLevel = false;
+                    childForm.FormBorderStyle = FormBorderStyle.None;
+                    childForm.Dock = DockStyle.Fill;
+                    mainpanel.Controls.Add(childForm);
+                    childForm.BringToFront();
+                    childForm.Show();
+                
             }
             catch (Exception ex)
             {
@@ -117,7 +126,7 @@ namespace mydiary
         private void btnTarget_MouseClick(object sender, MouseEventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new formTarget());
+            
         }
 
         private void btnCalendar_MouseClick(object sender, MouseEventArgs e)
@@ -181,17 +190,27 @@ namespace mydiary
 
         private void btnMindset_Click(object sender, EventArgs e)
         {
+            childFormname = "visionboardform";
             OpenChildForm(new visionboardform());
+
         }
 
         private void btnMonth_Click(object sender, EventArgs e)
         {
+            childFormname= "monthlog";
             OpenChildForm(new monthlog());
         }
 
         private void btnCalendar_Click(object sender, EventArgs e)
         {
+            childFormname = "calendar";
             OpenChildForm(new calendar());
+        }
+
+        private void btnTarget_Click(object sender, EventArgs e)
+        {
+            childFormname = "formTarget";
+            OpenChildForm(new target());
         }
     }
 }

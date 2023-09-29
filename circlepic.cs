@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Drawing;
 using System.Windows.Forms;
-using System.Drawing.Drawing2D;
-using System.ComponentModel;
 
 namespace mydiary
 {
-    class picuterboxCircle : PictureBox
+    class circlepic : PictureBox
     {
+    
         private int borderSize = 2;
+
         private Color borderColor = Color.RoyalBlue;
         private Color borderColor2 = Color.HotPink;
         private DashStyle borderLineStyle = DashStyle.Solid;
@@ -150,4 +151,4 @@ namespace mydiary
 
     }
 
-    }
+}

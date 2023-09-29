@@ -55,6 +55,13 @@ namespace mydiary
            
             childFormname = "formTarget";
             currentformname = "formTarget";
+
+
+            btnTarget.BackColor = RGBColors.color_btn_clicked;
+            currentbtn = btnTarget;
+
+            OpenChildForm(new target());
+
             this.Opacity = 1.0;
 
           

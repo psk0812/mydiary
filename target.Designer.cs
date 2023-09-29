@@ -224,6 +224,7 @@ namespace mydiary
             this.textBox1.Location = new System.Drawing.Point(3, 3);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(329, 178);
             this.textBox1.TabIndex = 0;
             // 
@@ -299,6 +300,7 @@ namespace mydiary
             // 
             this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox11.ForeColor = System.Drawing.Color.RoyalBlue;
             this.textBox11.Location = new System.Drawing.Point(3, 3);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
@@ -322,6 +324,7 @@ namespace mydiary
             // 
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox9.ForeColor = System.Drawing.Color.RoyalBlue;
             this.textBox9.Location = new System.Drawing.Point(3, 3);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
@@ -345,6 +348,7 @@ namespace mydiary
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox2.ForeColor = System.Drawing.Color.RoyalBlue;
             this.textBox2.Location = new System.Drawing.Point(3, 3);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -368,6 +372,7 @@ namespace mydiary
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox3.ForeColor = System.Drawing.Color.RoyalBlue;
             this.textBox3.Location = new System.Drawing.Point(3, 3);
             this.textBox3.Margin = new System.Windows.Forms.Padding(0);
             this.textBox3.Multiline = true;
@@ -392,6 +397,7 @@ namespace mydiary
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox4.ForeColor = System.Drawing.Color.RoyalBlue;
             this.textBox4.Location = new System.Drawing.Point(3, 3);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";

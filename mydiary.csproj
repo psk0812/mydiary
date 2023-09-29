@@ -123,6 +123,12 @@
     <Compile Include="target.Designer.cs">
       <DependentUpon>target.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usercontrollblank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrollblank.Designer.cs">
+      <DependentUpon>Usercontrollblank.cs</DependentUpon>
+    </Compile>
     <Compile Include="visionboardform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </Compile>
     <EmbeddedResource Include="target.resx">
       <DependentUpon>target.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrollblank.resx">
+      <DependentUpon>Usercontrollblank.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="visionboardform.resx">
       <DependentUpon>visionboardform.cs</DependentUpon>

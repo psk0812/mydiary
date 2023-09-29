@@ -101,5 +101,12 @@ namespace mydiary
             else
             { iconButton5.IconChar = FontAwesome.Sharp.IconChar.Square; }
         }
+
+        private void target_Load(object sender, EventArgs e)
+        {
+          
+        }
+
+ 
     }
 }

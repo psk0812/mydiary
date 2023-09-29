@@ -21,6 +21,7 @@ namespace mydiary
 
         public target()
         {
+            this.Opacity = 0.0;
             InitializeComponent();
 
             PrivateFontCollection privateFonts = new PrivateFontCollection();
@@ -36,7 +37,7 @@ namespace mydiary
             Font menufont3 = new Font(privateFonts.Families[1], 20f);
 
 
-            label1.Font = font;
+            textBox5.Font = font;
             label2.Font = menufont;
             label3.Font = menufont;
             textBox1.Font = menufont3;
@@ -45,6 +46,7 @@ namespace mydiary
             textBox4.Font = menufont2;
             textBox9.Font = menufont2;
             textBox11.Font = menufont2;
+            this.Opacity = 1.0;
         }
 
         private void circlepic1_Click(object sender, EventArgs e)
@@ -107,6 +109,6 @@ namespace mydiary
           
         }
 
- 
+       
     }
 }

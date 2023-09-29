@@ -19,11 +19,16 @@ namespace mydiary
 
         public calendar()
         {
+            this.Opacity = 0.0;
             InitializeComponent();
+            this.Opacity = 1.0;
+
         }
+
 
         private void calendar_Load(object sender, EventArgs e)
         {
+            this.Opacity = 0.0;
             for (int i = 1; i <= 42; i++)
             {
                 string PanelName = "panel" + i;
@@ -33,8 +38,8 @@ namespace mydiary
 
             }
             display();
-            
-            
+            this.Opacity = 1.0;
+
         }
 
         private void btnnext_Click(object sender, EventArgs e)
@@ -86,6 +91,8 @@ namespace mydiary
 
         private void display()
         {
+            
+
             DateTime now = DateTime.Now;
             month = now.Month;
             year = now.Year;
@@ -131,6 +138,7 @@ namespace mydiary
 
                 targetPanel.Controls.Add(daylabel);
             }
+       
         }
 
         private void btnpre_Click(object sender, EventArgs e)

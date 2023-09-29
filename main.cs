@@ -25,6 +25,7 @@ namespace mydiary
         public main()
         {
             InitializeComponent();
+            this.Opacity = 0.0;
             int screenWidth = Screen.PrimaryScreen.Bounds.Width;
             int screenHeight = Screen.PrimaryScreen.Bounds.Height;
 
@@ -54,7 +55,10 @@ namespace mydiary
            
             childFormname = "formTarget";
             currentformname = "formTarget";
-            OpenChildForm(new target());
+            this.Opacity = 1.0;
+
+          
+
         }
         private void OpenChildForm(Form childForm)
         {

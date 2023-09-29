@@ -31,6 +31,8 @@ namespace mydiary
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,28 +43,27 @@ namespace mydiary
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.todo5 = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.todo4 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.todo1 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.todo2 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.todo3 = new System.Windows.Forms.TextBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.circlepic1 = new mydiary.circlepic();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -77,7 +78,6 @@ namespace mydiary
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circlepic1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,6 +114,33 @@ namespace mydiary
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(747, 200);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 3;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel6.Controls.Add(this.textBox5, 1, 1);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 3;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(548, 194);
+            this.tableLayoutPanel6.TabIndex = 2;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox5.Location = new System.Drawing.Point(112, 51);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(377, 100);
+            this.textBox5.TabIndex = 0;
             // 
             // splitContainer2
             // 
@@ -200,6 +227,7 @@ namespace mydiary
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(329, 178);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tableLayoutPanel4
             // 
@@ -259,7 +287,7 @@ namespace mydiary
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel11.Controls.Add(this.textBox11);
+            this.panel11.Controls.Add(this.todo5);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.ForeColor = System.Drawing.Color.Black;
             this.panel11.Location = new System.Drawing.Point(44, 149);
@@ -269,21 +297,22 @@ namespace mydiary
             this.panel11.Size = new System.Drawing.Size(247, 37);
             this.panel11.TabIndex = 9;
             // 
-            // textBox11
+            // todo5
             // 
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox11.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBox11.Location = new System.Drawing.Point(3, 3);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(241, 31);
-            this.textBox11.TabIndex = 0;
+            this.todo5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.todo5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.todo5.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.todo5.Location = new System.Drawing.Point(3, 3);
+            this.todo5.Multiline = true;
+            this.todo5.Name = "todo5";
+            this.todo5.Size = new System.Drawing.Size(241, 31);
+            this.todo5.TabIndex = 0;
+            this.todo5.TextChanged += new System.EventHandler(this.todo5_TextChanged);
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel9.Controls.Add(this.textBox9);
+            this.panel9.Controls.Add(this.todo4);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.ForeColor = System.Drawing.Color.Black;
             this.panel9.Location = new System.Drawing.Point(44, 112);
@@ -293,21 +322,22 @@ namespace mydiary
             this.panel9.Size = new System.Drawing.Size(247, 35);
             this.panel9.TabIndex = 7;
             // 
-            // textBox9
+            // todo4
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox9.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBox9.Location = new System.Drawing.Point(3, 3);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(241, 29);
-            this.textBox9.TabIndex = 0;
+            this.todo4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.todo4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.todo4.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.todo4.Location = new System.Drawing.Point(3, 3);
+            this.todo4.Multiline = true;
+            this.todo4.Name = "todo4";
+            this.todo4.Size = new System.Drawing.Size(241, 29);
+            this.todo4.TabIndex = 0;
+            this.todo4.TextChanged += new System.EventHandler(this.todo4_TextChanged);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.todo1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.ForeColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(44, 1);
@@ -317,21 +347,23 @@ namespace mydiary
             this.panel2.Size = new System.Drawing.Size(247, 35);
             this.panel2.TabIndex = 0;
             // 
-            // textBox2
+            // todo1
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBox2.Location = new System.Drawing.Point(3, 3);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(241, 29);
-            this.textBox2.TabIndex = 0;
+            this.todo1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.todo1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.todo1.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.todo1.Location = new System.Drawing.Point(3, 3);
+            this.todo1.Multiline = true;
+            this.todo1.Name = "todo1";
+            this.todo1.Size = new System.Drawing.Size(241, 29);
+            this.todo1.TabIndex = 0;
+            this.todo1.Text = "`";
+            this.todo1.TextChanged += new System.EventHandler(this.todo1_TextChanged);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.todo2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.ForeColor = System.Drawing.Color.Black;
             this.panel3.Location = new System.Drawing.Point(44, 38);
@@ -341,22 +373,23 @@ namespace mydiary
             this.panel3.Size = new System.Drawing.Size(247, 35);
             this.panel3.TabIndex = 1;
             // 
-            // textBox3
+            // todo2
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBox3.Location = new System.Drawing.Point(3, 3);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(241, 29);
-            this.textBox3.TabIndex = 0;
+            this.todo2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.todo2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.todo2.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.todo2.Location = new System.Drawing.Point(3, 3);
+            this.todo2.Margin = new System.Windows.Forms.Padding(0);
+            this.todo2.Multiline = true;
+            this.todo2.Name = "todo2";
+            this.todo2.Size = new System.Drawing.Size(241, 29);
+            this.todo2.TabIndex = 0;
+            this.todo2.TextChanged += new System.EventHandler(this.todo2_TextChanged);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel4.Controls.Add(this.textBox4);
+            this.panel4.Controls.Add(this.todo3);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.ForeColor = System.Drawing.Color.Black;
             this.panel4.Location = new System.Drawing.Point(44, 75);
@@ -366,16 +399,17 @@ namespace mydiary
             this.panel4.Size = new System.Drawing.Size(247, 35);
             this.panel4.TabIndex = 2;
             // 
-            // textBox4
+            // todo3
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBox4.Location = new System.Drawing.Point(3, 3);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(241, 29);
-            this.textBox4.TabIndex = 0;
+            this.todo3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.todo3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.todo3.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.todo3.Location = new System.Drawing.Point(3, 3);
+            this.todo3.Multiline = true;
+            this.todo3.Name = "todo3";
+            this.todo3.Size = new System.Drawing.Size(241, 29);
+            this.todo3.TabIndex = 0;
+            this.todo3.TextChanged += new System.EventHandler(this.todo3_TextChanged);
             // 
             // iconButton1
             // 
@@ -452,33 +486,6 @@ namespace mydiary
             this.iconButton5.UseVisualStyleBackColor = true;
             this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.ColumnCount = 3;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel6.Controls.Add(this.textBox5, 1, 1);
-            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 3;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(548, 194);
-            this.tableLayoutPanel6.TabIndex = 2;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Location = new System.Drawing.Point(112, 51);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(377, 100);
-            this.textBox5.TabIndex = 0;
-            // 
             // circlepic1
             // 
             this.circlepic1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Triangle;
@@ -510,6 +517,8 @@ namespace mydiary
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
@@ -532,8 +541,6 @@ namespace mydiary
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circlepic1)).EndInit();
             this.ResumeLayout(false);
 
@@ -554,15 +561,15 @@ namespace mydiary
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox todo1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox todo2;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox todo3;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox todo5;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox todo4;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton3;

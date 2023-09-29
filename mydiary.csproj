@@ -193,7 +193,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="cool.jpg" />
     <Content Include="Properties\agenda_78320.ico" />
     <Content Include="Properties\checkbox-after.png" />
     <Content Include="Properties\checkbox-before.png" />

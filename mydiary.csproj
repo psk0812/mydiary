@@ -118,6 +118,12 @@
     <Compile Include="radiuspanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="scheduler_enter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="scheduler_enter.Designer.cs">
+      <DependentUpon>scheduler_enter.cs</DependentUpon>
+    </Compile>
     <Compile Include="target.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +167,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="scheduler_enter.resx">
+      <DependentUpon>scheduler_enter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="target.resx">
       <DependentUpon>target.cs</DependentUpon>
     </EmbeddedResource>

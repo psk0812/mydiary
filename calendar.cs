@@ -25,7 +25,15 @@ namespace mydiary
 
         }
 
-
+        private void calender_click_event(Panel target)
+        {
+            target.Click += (s, args) =>
+            {
+                // 클릭 이벤트 처리 코드를 여기에 작성
+                // 예: 패널이 클릭되었을 때 할 일
+                MessageBox.Show("패널 "+ " 클릭됨");
+            };
+        }
         private void calendar_Load(object sender, EventArgs e)
         {
             this.Opacity = 0.0;
@@ -35,7 +43,7 @@ namespace mydiary
                 Panel targetPanel = (Panel)tableLayoutPanel1.Controls.Find(PanelName, true)[0];
                 targetPanel.BackColor = Color.White;
                 targetPanel.Dock = DockStyle.Fill;
-
+                calender_click_event(targetPanel);
             }
             display();
             this.Opacity = 1.0;
@@ -86,6 +94,8 @@ namespace mydiary
                 if (day == count && month == nowmonth)
                 { daylabel.ForeColor = Color.RoyalBlue; }
                 targetPanel.Controls.Add(daylabel);
+
+
             }
         }
 

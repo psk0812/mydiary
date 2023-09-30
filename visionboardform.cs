@@ -30,13 +30,13 @@ namespace mydiary
             string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
             Console.WriteLine("appDirectory");
             Console.WriteLine(appDirectory);
-            visionboard_1 = Path.Combine(appDirectory, @"..\..\..\data\visionboard_1.txt");
-            visionboard_2 = Path.Combine(appDirectory, @"..\..\..\data\visionboard_2.txt");
-            visionboard_3 = Path.Combine(appDirectory, @"..\..\..\data\visionboard_3.txt");
-            visionboard_4 = Path.Combine(appDirectory, @"..\..\..\data\visionboard_4.txt");
-            visionboard_5 = Path.Combine(appDirectory, @"..\..\..\data\visionboard_5.txt");
-            visionboard_6 = Path.Combine(appDirectory, @"..\..\..\data\visionboard_6.txt");
-            visionboard_7 = Path.Combine(appDirectory, @"..\..\..\data\visionboard_7.txt");
+            visionboard_1 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_1.txt");
+            visionboard_2 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_2.txt");
+            visionboard_3 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_3.txt");
+            visionboard_4 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_4.txt");
+            visionboard_5 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_5.txt");
+            visionboard_6 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_6.txt");
+            visionboard_7 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_7.txt");
 
            
 
@@ -49,7 +49,7 @@ namespace mydiary
                 string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
                 
-                string filePath = Path.Combine(appDirectory, @"..\..\..\data\visionboard_1.txt");
+                string filePath = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_1.txt");
                 using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
                     openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
@@ -76,7 +76,7 @@ namespace mydiary
             {
                 string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
-                string filePath = Path.Combine(appDirectory, @"..\..\..\data\visionboard_2.txt");
+                string filePath = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_2.txt");
                 using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
                     openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
@@ -101,7 +101,7 @@ namespace mydiary
             try
             {
                 string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
-                string filePath = Path.Combine(appDirectory, @"..\..\..\data\visionboard_3.txt");
+                string filePath = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_3.txt");
                 using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
                     openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
@@ -126,7 +126,7 @@ namespace mydiary
             try
             {
                 string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
-                string filePath = Path.Combine(appDirectory, @"..\..\..\data\visionboard_4.txt");
+                string filePath = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_4.txt");
                 using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
                     openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
@@ -151,7 +151,7 @@ namespace mydiary
             try
             {
                 string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
-                string filePath = Path.Combine(appDirectory, @"..\..\..\data\visionboard_5.txt");
+                string filePath = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_5.txt");
                 using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
                     openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
@@ -176,7 +176,7 @@ namespace mydiary
             try
             {
                 string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
-                string filePath = Path.Combine(appDirectory, @"..\..\..\data\visionboard_6.txt");
+                string filePath = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_6.txt");
                 using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
                     openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
@@ -201,7 +201,7 @@ namespace mydiary
             try
             {
                 string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
-                string filePath = Path.Combine(appDirectory, @"..\..\..\data\visionboard_7.txt");
+                string filePath = Path.Combine(appDirectory, @"..\..\..\mydiary\data\visionboard_7.txt");
                 using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
                     openFileDialog.Filter = "이미지 파일 (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";

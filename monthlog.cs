@@ -97,18 +97,18 @@ namespace mydiary
 
             string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
             
-            Text_Month_1 = Path.Combine(appDirectory, @"..\..\..\data\month_1.txt");
-            Text_Month_2 = Path.Combine(appDirectory, @"..\..\..\data\month_2.txt");
-            Text_Month_3 = Path.Combine(appDirectory, @"..\..\..\data\month_3.txt");
-            Text_Month_4 = Path.Combine(appDirectory, @"..\..\..\data\month_4.txt");
-            Text_Month_5 = Path.Combine(appDirectory, @"..\..\..\data\month_5.txt");
-            Text_Month_6 = Path.Combine(appDirectory, @"..\..\..\data\month_6.txt");
-            Text_Month_7 = Path.Combine(appDirectory, @"..\..\..\data\month_7.txt");
-            Text_Month_8 = Path.Combine(appDirectory, @"..\..\..\data\month_8.txt");
-            Text_Month_9 = Path.Combine(appDirectory, @"..\..\..\data\month_9.txt");
-            Text_Month_10 = Path.Combine(appDirectory, @"..\..\..\data\month_10.txt");
-            Text_Month_11 = Path.Combine(appDirectory, @"..\..\..\data\month_11.txt");
-            Text_Month_12 = Path.Combine(appDirectory, @"..\..\..\data\month_12.txt");
+            Text_Month_1 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\month_1.txt");
+            Text_Month_2 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\month_2.txt");
+            Text_Month_3 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\month_3.txt");
+            Text_Month_4 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\month_4.txt");
+            Text_Month_5 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\month_5.txt");
+            Text_Month_6 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\month_6.txt");
+            Text_Month_7 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\month_7.txt");
+            Text_Month_8 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\month_8.txt");
+            Text_Month_9 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\month_9.txt");
+            Text_Month_10 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\month_10.txt");
+            Text_Month_11 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\month_11.txt");
+            Text_Month_12 = Path.Combine(appDirectory, @"..\..\..\mydiary\data\month_12.txt");
         }
 
 

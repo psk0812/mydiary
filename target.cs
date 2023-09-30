@@ -149,7 +149,7 @@ namespace mydiary
         private void circlepic1_Click(object sender, EventArgs e)
         {
             string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string filePath = Path.Combine(appDirectory, @"..\..\..\data\targetpicbox.txt");
+            string filePath = Path.Combine(appDirectory, @"..\..\..\mydiary\data\targetpicbox.txt");
             Console.WriteLine(filePath);
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {

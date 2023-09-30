@@ -84,6 +84,7 @@ namespace mydiary
             this.panel42 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -151,6 +152,7 @@ namespace mydiary
             this.tableLayoutPanel1.Controls.Add(this.panel42, 6, 6);
             this.tableLayoutPanel1.Controls.Add(this.label8, 5, 7);
             this.tableLayoutPanel1.Controls.Add(this.label9, 4, 7);
+            this.tableLayoutPanel1.Controls.Add(this.iconButton1, 0, 7);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(1);
@@ -664,6 +666,23 @@ namespace mydiary
             this.label9.Text = "label9";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconButton1.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(8, 422);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(99, 37);
+            this.iconButton1.TabIndex = 54;
+            this.iconButton1.Text = "Edit";
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
             // calendar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -740,5 +759,6 @@ namespace mydiary
         private System.Windows.Forms.Panel panel42;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

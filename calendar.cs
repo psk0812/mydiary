@@ -1,9 +1,12 @@
-﻿using System;
+﻿using mydiary.monthlogs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Text;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,22 +19,28 @@ namespace mydiary
         int month, year,day;
         int nowmonth;
         Font fontdays;
-
+        String Text_path;
+        string appDirectory;
         public calendar()
         {
             this.Opacity = 0.0;
             InitializeComponent();
-            this.Opacity = 1.0;
 
+
+            appDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
+            Text_path = Path.Combine(appDirectory, @"..\..\..\mydiary\data\scheduler.txt");
+            this.Opacity = 1.0;
         }
 
-        private void calender_click_event(Panel target)
+        private void calender_click_event(Panel target,String month, String day)
         {
             target.Click += (s, args) =>
             {
-                // 클릭 이벤트 처리 코드를 여기에 작성
-                // 예: 패널이 클릭되었을 때 할 일
-                MessageBox.Show("패널 "+ " 클릭됨");
+                enter_schedule enter = new enter_schedule();
+                enter.text_month = month;
+                enter.text_day = day;
+                enter.Show();
             };
         }
         private void calendar_Load(object sender, EventArgs e)
@@ -43,7 +52,7 @@ namespace mydiary
                 Panel targetPanel = (Panel)tableLayoutPanel1.Controls.Find(PanelName, true)[0];
                 targetPanel.BackColor = Color.White;
                 targetPanel.Dock = DockStyle.Fill;
-                calender_click_event(targetPanel);
+                
             }
             display();
             this.Opacity = 1.0;
@@ -94,6 +103,7 @@ namespace mydiary
                 if (day == count && month == nowmonth)
                 { daylabel.ForeColor = Color.RoyalBlue; }
                 targetPanel.Controls.Add(daylabel);
+                calender_click_event(targetPanel, month.ToString(), i.ToString());
 
 
             }
@@ -147,8 +157,20 @@ namespace mydiary
                 { daylabel.ForeColor = Color.RoyalBlue; }
 
                 targetPanel.Controls.Add(daylabel);
+                calender_click_event(targetPanel, month.ToString(), i.ToString()); ;
             }
        
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+           
+            Form1 monthform = new Form1();
+            string[] whatshould = File.ReadAllLines(Text_path);
+            monthform.Text = "전체 계획";
+            monthform.FilePath = Text_path;
+            monthform.TextBox1 = whatshould;
+            monthform.ShowDialog();
         }
 
         private void btnpre_Click(object sender, EventArgs e)
@@ -195,6 +217,7 @@ namespace mydiary
                 if (day == count && month == nowmonth)
                 { daylabel.ForeColor = Color.RoyalBlue; }
                 targetPanel.Controls.Add(daylabel);
+                calender_click_event(targetPanel, month.ToString(), i.ToString()); ;
             }
         }
 

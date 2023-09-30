@@ -1,7 +1,7 @@
 ﻿
 namespace mydiary
 {
-    partial class scheduler_enter
+    partial class enter_schedule
     {
         /// <summary>
         /// Required designer variable.
@@ -37,8 +37,9 @@ namespace mydiary
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(314, 21);
+            this.textBox1.Size = new System.Drawing.Size(296, 26);
             this.textBox1.TabIndex = 0;
             // 
             // button1
@@ -47,24 +48,23 @@ namespace mydiary
             this.button1.Dock = System.Windows.Forms.DockStyle.Right;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(239, 21);
+            this.button1.Location = new System.Drawing.Point(221, 26);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 26);
+            this.button1.Size = new System.Drawing.Size(75, 28);
             this.button1.TabIndex = 1;
             this.button1.Text = "저장";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // scheduler_enter
+            // enter_schedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 47);
+            this.ClientSize = new System.Drawing.Size(296, 54);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "scheduler_enter";
-            this.Text = "계획 입력";
-           
+            this.Name = "enter_schedule";
+            this.Text = "스케줄 입력";
             this.ResumeLayout(false);
             this.PerformLayout();
 

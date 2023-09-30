@@ -92,6 +92,12 @@
     <Compile Include="custombox.Designer.cs">
       <DependentUpon>custombox.cs</DependentUpon>
     </Compile>
+    <Compile Include="enter_schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enter_schedule.Designer.cs">
+      <DependentUpon>enter_schedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,23 +124,11 @@
     <Compile Include="radiuspanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="scheduler_enter.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="scheduler_enter.Designer.cs">
-      <DependentUpon>scheduler_enter.cs</DependentUpon>
-    </Compile>
     <Compile Include="target.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="target.Designer.cs">
       <DependentUpon>target.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Usercontrollblank.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Usercontrollblank.Designer.cs">
-      <DependentUpon>Usercontrollblank.cs</DependentUpon>
     </Compile>
     <Compile Include="visionboardform.cs">
       <SubType>Form</SubType>
@@ -147,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="custombox.resx">
       <DependentUpon>custombox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enter_schedule.resx">
+      <DependentUpon>enter_schedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
@@ -167,14 +164,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="scheduler_enter.resx">
-      <DependentUpon>scheduler_enter.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="target.resx">
       <DependentUpon>target.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrollblank.resx">
-      <DependentUpon>Usercontrollblank.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="visionboardform.resx">
       <DependentUpon>visionboardform.cs</DependentUpon>

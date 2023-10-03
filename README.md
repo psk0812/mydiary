@@ -5,7 +5,8 @@
 
 ## 마이 다이어리
 <h2> 1.목표 설정 코너</h2>
-<img src=https://github.com/psk0812/mydiary/assets/130532081/08fec508-9407-42d5-b0b7-6c35d322fee7>
+<img src= https://github.com/psk0812/mydiary/assets/130532081/1eb20fab-f095-4ad2-8181-0422f9a9b51a>
+
 고치고 싶은 부분을 클릭 후 수정하면 된다. 
 
 <h2> 2. 계획표</h2>

@@ -348,6 +348,45 @@ namespace mydiary
                 return null; // 예외 발생 시 null 반환
             }
         }
+
+        private void visionboardform_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if(visionpictureBox1.Image !=null)
+            {
+                visionpictureBox1.Image.Dispose();
+            }
+
+            if (visionpictureBox2.Image != null)
+            {                   
+                visionpictureBox2.Image.Dispose();
+            }
+
+            if (visionpictureBox3.Image != null)
+            {
+                visionpictureBox3.Image.Dispose();
+
+            }
+
+            if (visionpictureBox4.Image != null)
+            {
+                visionpictureBox4.Image.Dispose();
+            }
+
+            if (visionpictureBox5.Image != null)
+            {
+                visionpictureBox5.Image.Dispose();
+            }
+
+            if (pictureBox1.Image != null)
+            {
+                pictureBox1.Image.Dispose();
+            }
+
+            if (pictureBox2.Image != null)
+            {
+                pictureBox2.Image.Dispose();
+            }
+        }
     }
 
 }

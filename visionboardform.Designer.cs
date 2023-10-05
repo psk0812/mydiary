@@ -209,6 +209,7 @@ namespace mydiary
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "visionboardform";
             this.Text = "visionboardform";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.visionboardform_FormClosed);
             this.Load += new System.EventHandler(this.visionboardform_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
